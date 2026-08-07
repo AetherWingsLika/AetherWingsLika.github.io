@@ -67,20 +67,37 @@ header {
   margin-bottom: 2rem;
 }
 
-.stats {
+/* ========== FILTERS ========== */
+.filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-bottom: 3rem;
 }
 
-.stat {
+.filter-btn {
   background: #222;
   border: 1px solid #333;
   border-radius: 999px;
-  padding: 0.55rem 1.1rem;
+  padding: 0.55rem 1.25rem;
   font-size: 0.9rem;
   color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: #fff;
+  color: #111;
+  border-color: #fff;
+  font-weight: 600;
 }
 
 .cards {
