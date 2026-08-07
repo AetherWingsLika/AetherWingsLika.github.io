@@ -38,7 +38,7 @@ header {
 .hero {
   max-width: 780px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;
+  padding: 0.8rem 1.5rem 2rem;   /* ← reduced top padding from 3rem to 1.2rem */
   text-align: left;
 }
 
@@ -174,7 +174,7 @@ header {
 /* Bring the footer closer */
 .site-footer {
   text-align: center;
-  padding: 1.8rem 1.5rem 2.5rem;  /* ← reduced top padding */
+  padding: 1.2rem 1.5rem 2.5rem;  /* ← reduced top padding */
   font-size: 1.05rem;
   color: var(--muted);
   line-height: 1.6;
