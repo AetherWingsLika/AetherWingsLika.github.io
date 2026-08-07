@@ -5,7 +5,7 @@
     "url": "posts/game-5.html",
     "category": "jupiler",
     "rating": 0,
-    "color": "#22c55e"
+    "color": "#22c55e",
     "clickable": true
   },
     {
@@ -14,7 +14,7 @@
     "url": "posts/game-4.html",
     "category": "jupiler",
     "rating": 0,
-    "color": "#22c55e"
+    "color": "#22c55e",
     "clickable": false
   },
     {
@@ -23,7 +23,7 @@
     "url": "posts/game-3.html",
     "category": "jupiler",
     "rating": 0,
-    "color": "#3b82f6"
+    "color": "#3b82f6",
     "clickable": false
   },
     {
@@ -32,7 +32,7 @@
     "url": "posts/game-2.html",
     "rating": 0,
     "category": "jupiler",
-    "color": "#ef4444"
+    "color": "#ef4444",
     "clickable": false
   },
   {
@@ -41,7 +41,7 @@
     "url": "posts/game-1.html",
     "category": "jupiler",
     "rating": 3,
-    "color": "#3b82f6"
+    "color": "#3b82f6",
     "clickable": false
   }
 ]
