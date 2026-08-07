@@ -1,13 +1,29 @@
 [
-  {
-    "title": "Game 1: Club Brugge 3-0 Courtrai",
-    "excerpt": "Ouverture de la Jupiler Pro League 26-27",
-    "url": "posts/game-1.html",
+    {
+    "title": "Game 5 : Charleroi - OHL",
+    "excerpt": "Khoenen mania ?",
+    "url": "posts/game-5.html",
     "category": "jupiler",
-    "rating": 3,
+    "rating": 0,
+    "color": "#22c55e"
+  },
+    {
+    "title": "Game 4 : Gand - Malines",
+    "excerpt": "Duel du top 6",
+    "url": "posts/game-4.html",
+    "category": "jupiler",
+    "rating": 0,
+    "color": "#22c55e"
+  },
+    {
+    "title": "Game 3: STVV - Lommel",
+    "excerpt": "La vie après Vrancken",
+    "url": "posts/game-3.html",
+    "category": "jupiler",
+    "rating": 0,
     "color": "#3b82f6"
   },
-  {
+    {
     "title": "Game 2: Standard Liège - Cercle Brugge",
     "excerpt": "La première du Standard à Sclessin.",
     "url": "posts/game-2.html",
@@ -16,27 +32,11 @@
     "color": "#ef4444"
   },
   {
-    "title": "Game 3: STVV - Lommel",
-    "excerpt": "La vie après Vrancken",
-    "url": "posts/game-3.html",
+    "title": "Game 1: Club Brugge 3-0 Courtrai",
+    "excerpt": "Ouverture de la Jupiler Pro League 26-27",
+    "url": "posts/game-1.html",
     "category": "jupiler",
-    "rating": 0,
+    "rating": 3,
     "color": "#3b82f6"
-  },
-  {
-    "title": "Game 4 : Gand - Malines",
-    "excerpt": "Duel du top 6",
-    "url": "posts/game-4.html",
-    "category": "jupiler",
-    "rating": 0,
-    "color": "#22c55e"
-  },
-  {
-    "title": "Game 5 : Charleroi - OHL",
-    "excerpt": "Khoenen mania ?",
-    "url": "posts/game-5.html",
-    "category": "jupiler",
-    "rating": 0,
-    "color": "#22c55e"
   }
 ]
