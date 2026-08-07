@@ -198,4 +198,40 @@ header {
   .stats {
     gap: 0.5rem;
   }
+
+  /* ========== STARS ========== */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+  flex-wrap: wrap; /* helps on very small screens */
+}
+
+.card-header h3 {
+  flex: 1;               /* title takes remaining space */
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.stars {
+  display: flex;
+  gap: 1px;
+  font-size: 1.05rem;
+  letter-spacing: -1px;
+  margin-left: auto;     /* pushes stars to the right */
+}
+
+.star {
+  color: #3b82f6;        /* nice blue (you can change to #fbbf24 for gold) */
+  position: relative;
+}
+
+.star.half {
+  background: linear-gradient(90deg, #3b82f6 50%, #333 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 }
