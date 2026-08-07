@@ -161,6 +161,32 @@ header {
   display: none;
 }
 
+/* ========== CIRCLE instead of square ========== */
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;          /* ← this makes it a circle/ball */
+  flex-shrink: 0;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .hero {
