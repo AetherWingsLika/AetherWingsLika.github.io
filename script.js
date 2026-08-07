@@ -85,7 +85,7 @@ function createCard(post, index) {
     <div class="card-header">
       <div class="color-dot" style="background:${color}"></div>
       <h3>${post.title}</h3>
-      <div class="stars">${starsHTML}</div>
+      <div class="stars" style="color:${color}">${starsHTML}</div>
     </div>
     <p>${post.excerpt}</p>
   `;
