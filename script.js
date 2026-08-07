@@ -66,18 +66,15 @@ function applyFilter(filter) {
 
 function createCard(post, index) {
   const color = post.color || colors[index % colors.length];
-  const rating = post.rating || 0;
+  const rating = Math.min(Math.max(Number(post.rating) || 0, 0), 5); // 0 to 5
 
-  // Generate stars (rating out of 10 → stars out of 5)
   let starsHTML = "";
-  const fullStars = Math.floor(rating / 2);
-  const hasHalf = rating % 2 === 1;
-
-  for (let i = 0; i < fullStars; i++) {
-    starsHTML += `<span class="star full">★</span>`;
-  }
-  if (hasHalf) {
-    starsHTML += `<span class="star half">★</span>`;
+  for (let i = 1; i <= 5; i++) {
+    if (i <= rating) {
+      starsHTML += `<span class="star full">★</span>`;
+    } else {
+      starsHTML += `<span class="star empty">☆</span>`;
+    }
   }
 
   const a = document.createElement("a");
