@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game 1: Club Brugg - Courtrai</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .post h1 {
+      font-size: 2rem;
+      margin: 1.5rem 0 1rem;
+    }
+    .post p {
+      margin-bottom: 1.2rem;
+      color: #d4d4d4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../" class="home-btn">← Home</a>
+  </header>
+
+  <article class="post">
+    <h1>Game 1: Game 1: Club Brugg - Courtrai</h1>
+    <p>Your full article content goes here…</p>
+    <p>More paragraphs…</p>
+  </article>
+</body>
+</html>
