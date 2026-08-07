@@ -122,9 +122,16 @@ const observer = new IntersectionObserver(
 observer.observe(loadingEl);
 
 // Filter button clicks
+// → Clicking an already active filter turns it off and goes back to "All"
 document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-    applyFilter(btn.dataset.filter);
+    const filter = btn.dataset.filter;
+
+    if (btn.classList.contains("active") && filter !== "all") {
+      applyFilter("all");
+    } else {
+      applyFilter(filter);
+    }
   });
 });
 
