@@ -1,45 +1,65 @@
 const POSTS_PER_LOAD = 5;
 let currentIndex = 0;
 let allPosts = [];
+let filteredPosts = [];
 let isLoading = false;
+let currentFilter = "all";
 
 const container = document.getElementById("cards-container");
 const loadingEl = document.getElementById("loading");
 
-// Colors for the little squares (cycle through them)
 const colors = ["#ef4444", "#22c55e", "#3b82f6", "#a855f7", "#f59e0b", "#06b6d4"];
 
 async function loadPostsList() {
   try {
-    // Prefer a JSON file (easy to maintain)
     const res = await fetch("./posts.json");
     if (!res.ok) throw new Error("No posts.json");
     allPosts = await res.json();
   } catch (err) {
-    // Fallback: hard-coded list (useful while testing)
     console.warn("Using fallback list");
     allPosts = [
       {
-        title: "Game 1: The first win ($100/month, Year 1)",
-        excerpt: "This is not a success story. Two years ago I started with a simple goal…",
+        title: "Game 1: Anderlecht vs Club Brugge",
+        excerpt: "A classic Belgian derby full of tension and late drama…",
         url: "posts/game-1.html",
+        category: "jupiler",
         color: colors[0]
       },
       {
-        title: "Game 2: Breaking through the ceiling ($2k/month)",
-        excerpt: "After more than 2 years of launching failure after failure…",
+        title: "Game 2: Inter vs Milan",
+        excerpt: "The Derby della Madonnina never disappoints…",
         url: "posts/game-2.html",
+        category: "serie-a",
         color: colors[1]
       },
       {
-        title: "Game 3: Learning through scars ($3k/month)",
-        excerpt: "It’s late at night. I’m on my laptop. Over the past few months…",
+        title: "Game 3: Random Champions League night",
+        excerpt: "Not everything has to be a big league…",
         url: "posts/game-3.html",
+        category: "autres",
         color: colors[2]
       }
-      // Add more here if you prefer not to use posts.json
     ];
   }
+
+  applyFilter("all");
+}
+
+function applyFilter(filter) {
+  currentFilter = filter;
+  currentIndex = 0;
+  container.innerHTML = ""; // clear previous cards
+
+  if (filter === "all") {
+    filteredPosts = [...allPosts];
+  } else {
+    filteredPosts = allPosts.filter(post => post.category === filter);
+  }
+
+  // Update active button
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.filter === filter);
+  });
 
   renderNextBatch();
 }
@@ -63,14 +83,18 @@ function createCard(post, index) {
 }
 
 function renderNextBatch() {
-  if (isLoading || currentIndex >= allPosts.length) return;
+  if (isLoading || currentIndex >= filteredPosts.length) {
+    if (currentIndex >= filteredPosts.length) {
+      loadingEl.classList.add("hidden");
+    }
+    return;
+  }
 
   isLoading = true;
   loadingEl.classList.remove("hidden");
 
-  // Small delay so the loading indicator is visible
   setTimeout(() => {
-    const next = allPosts.slice(currentIndex, currentIndex + POSTS_PER_LOAD);
+    const next = filteredPosts.slice(currentIndex, currentIndex + POSTS_PER_LOAD);
 
     next.forEach((post, i) => {
       container.appendChild(createCard(post, currentIndex + i));
@@ -78,26 +102,31 @@ function renderNextBatch() {
 
     currentIndex += next.length;
     isLoading = false;
-    loadingEl.classList.add("hidden");
 
-    // If nothing left, stop observing
-    if (currentIndex >= allPosts.length) {
-      observer.disconnect();
+    if (currentIndex >= filteredPosts.length) {
+      loadingEl.classList.add("hidden");
     }
-  }, 250);
+  }, 200);
 }
 
 // Infinite scroll
 const observer = new IntersectionObserver(
   (entries) => {
-    if (entries[0].isIntersecting) {
+    if (entries[0].isIntersecting && !isLoading) {
       renderNextBatch();
     }
   },
-  { rootMargin: "200px" }
+  { rootMargin: "250px" }
 );
 
 observer.observe(loadingEl);
+
+// Filter button clicks
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    applyFilter(btn.dataset.filter);
+  });
+});
 
 // Start
 loadPostsList();
