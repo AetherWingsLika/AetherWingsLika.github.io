@@ -1,23 +1,26 @@
 [
   {
-    "title": "Game 1: Club Brugge - Courtrai",
+    "title": "Game 1: Club Brugge 3-0 Courtrai",
     "excerpt": "Ouverture de la Jupiler Pro League 26-27",
     "url": "posts/game-1.html",
     "category": "jupiler",
-    "color": "#ef4444"
+    "rating": 7,
+    "color": "#3b82f6"
   },
   {
     "title": "Game 2: Standard Liège - Cercle Brugge",
     "excerpt": "La première du Standard à Sclessin.",
     "url": "posts/game-2.html",
+    "rating": 0,
     "category": "jupiler",
-    "color": "#22c55e"
+    "color": "#ef4444"
   },
   {
     "title": "Game 3: STVV - Lommel",
     "excerpt": "La vie après Vrancken",
     "url": "posts/game-3.html",
     "category": "jupiler",
+    "rating": 0,
     "color": "#3b82f6"
   },
   {
@@ -25,6 +28,7 @@
     "excerpt": "Duel du top 6",
     "url": "posts/game-4.html",
     "category": "jupiler",
+    "rating": 0,
     "color": "#22c55e"
   },
   {
@@ -32,6 +36,7 @@
     "excerpt": "Khoenen mania ?",
     "url": "posts/game-5.html",
     "category": "jupiler",
+    "rating": 0,
     "color": "#22c55e"
   }
 ]
