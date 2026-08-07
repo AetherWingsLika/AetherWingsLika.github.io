@@ -1,0 +1,155 @@
+:root {
+  --bg: #0f0f0f;
+  --card-bg: #1a1a1a;
+  --text: #e5e5e5;
+  --muted: #a0a0a0;
+  --accent: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1.25rem 2rem;
+}
+
+.home-btn {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.home-btn:hover {
+  color: var(--accent);
+}
+
+.hero {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.6rem;
+}
+
+.emoji {
+  font-size: 0.85em;
+}
+
+.hero h2 {
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  font-weight: 500;
+  color: #d4d4d4;
+  margin-bottom: 1.2rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.stat {
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.cards {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 1.6rem 1.7rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s, background 0.2s;
+  border: 1px solid #2a2a2a;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  background: #222;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.loading {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 2rem;
+  }
+  .stats {
+    gap: 0.5rem;
+  }
+}
