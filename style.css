@@ -217,21 +217,16 @@ header {
 .stars {
   display: flex;
   gap: 1px;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  margin-left: auto;
   letter-spacing: -1px;
-  margin-left: auto;     /* pushes stars to the right */
 }
 
-.star {
-  color: #3b82f6;        /* nice blue (you can change to #fbbf24 for gold) */
-  position: relative;
+.star.full {
+  color: #3b82f6;     /* blue – change to #fbbf24 if you prefer gold */
 }
 
-.star.half {
-  background: linear-gradient(90deg, #3b82f6 50%, #333 50%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+.star.empty {
+  color: #444;
 }
 }
