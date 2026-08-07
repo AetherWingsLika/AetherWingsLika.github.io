@@ -66,6 +66,19 @@ function applyFilter(filter) {
 
 function createCard(post, index) {
   const color = post.color || colors[index % colors.length];
+  const rating = post.rating || 0;
+
+  // Generate stars (rating out of 10 → stars out of 5)
+  let starsHTML = "";
+  const fullStars = Math.floor(rating / 2);
+  const hasHalf = rating % 2 === 1;
+
+  for (let i = 0; i < fullStars; i++) {
+    starsHTML += `<span class="star full">★</span>`;
+  }
+  if (hasHalf) {
+    starsHTML += `<span class="star half">★</span>`;
+  }
 
   const a = document.createElement("a");
   a.href = post.url;
@@ -75,6 +88,7 @@ function createCard(post, index) {
     <div class="card-header">
       <div class="color-dot" style="background:${color}"></div>
       <h3>${post.title}</h3>
+      <div class="stars">${starsHTML}</div>
     </div>
     <p>${post.excerpt}</p>
   `;
