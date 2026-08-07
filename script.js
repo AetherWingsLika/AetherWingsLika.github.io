@@ -77,8 +77,15 @@ function createCard(post, index) {
     }
   }
 
-  const card = document.createElement("div");
+  // Decide if the card should be clickable
+  const isClickable = post.clickable === true;
+
+  const card = document.createElement(isClickable ? "a" : "div");
   card.className = "card";
+
+  if (isClickable) {
+    card.href = post.url;
+  }
 
   card.innerHTML = `
     <div class="card-header">
