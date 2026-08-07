@@ -100,10 +100,11 @@ header {
   font-weight: 600;
 }
 
+/* Reduce space after the cards */
 .cards {
   max-width: 780px;
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 0 1.5rem 1.5rem;   /* ← changed from 4rem to 1.5rem */
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -170,11 +171,13 @@ header {
 }
 
 /* ========== FOOTER ========== */
+/* Bring the footer closer */
 .site-footer {
   text-align: center;
-  padding: 3rem 1.5rem 2.5rem;
-  color: #666;
-  font-size: 0.9rem;
+  padding: 1.8rem 1.5rem 2.5rem;  /* ← reduced top padding */
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .site-footer a {
