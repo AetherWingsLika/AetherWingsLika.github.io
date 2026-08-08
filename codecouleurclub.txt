@@ -1,0 +1,34 @@
+JUPILER PRO LEAGUE 
+
+Standard Liège   #ED1C24
+Club Brugge      #0078BF
+STVV             #F5EE42
+Westerlo         #FFD700
+KAAG             #004794
+Charleroi        #0A0A0A 
+Zulte            ##E21350
+Anderlecht       #FFFFFF
+Antwerp          #D81636 
+Courtrai         #CA2027
+Cercle Brugge    #5FB22C
+Lommel           #00e500
+USG              #FDDB10
+Malines          #E41B13
+OHL              #FFFFFF
+Genk             #04407E
+RAAL             #006400
+Beveren          #283B7B
+
+Serie A
+
+Inter            #010E80
+Udinese          #000000
+Como             #073F6A
+Milan            #fb090b
+Juve             #000000
+Lazio            #87d8f7
+Napoli           #12a0d7
+
+Autres
+
+Leeds United     #1D428A
