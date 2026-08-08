@@ -1,18 +1,25 @@
 [
     {
-    "title": "Game 2 : Standard de Liège 2-2 Cercle Brugge",
-    "excerpt": "Beaucoup de clowns avec Circus\nButeurs : Ayensa x2 - Mondele, Ravych\nNouveau joueur à suivre : Trouillet, Standard de Liège",
-    "url": "posts/game-1.html",
+    "title": "Match 3 : STVV - Lommel SK",
+    "excerpt": "3/4 du Stayen\nNouveau joueur à suivre : Nypan, Lommel SK",
     "category": "jupiler",
     "rating": 3,
     "favorite": false,
     "color": "#ED1C24",
     "clickable": false
   },
-  {
-    "title": "Game 1 : Club Brugge 3-0 Courtrai",
+    {
+    "title": "Match 2 : Standard de Liège 2-2 Cercle Brugge",
+    "excerpt": "Beaucoup de clowns avec Circus\nButeurs : Ayensa x2 - Mondele, Ravych\nNouveau joueur à suivre : Trouillet, Standard de Liège",
+    "category": "jupiler",
+    "rating": 3,
+    "favorite": false,
+    "color": "#ED1C24",
+    "clickable": false
+  },
+    {
+    "title": "Match 1 : Club Brugge 3-0 Courtrai",
     "excerpt": "Match contrôlé malgré une sortie ratée de Sommer en début de match\nButeurs : Vetlessen, Forbs, Tresoldi\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
-    "url": "posts/game-1.html",
     "category": "jupiler",
     "rating": 3,
     "favorite": false,
