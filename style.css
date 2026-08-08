@@ -238,4 +238,7 @@ header {
     margin: 0;
     font-size: 1.15rem;
   }
+   .card-header .stars {
+    /* margin-left: 0; */ /* Uncomment if I want stars aligned with title */
+  }
 }
