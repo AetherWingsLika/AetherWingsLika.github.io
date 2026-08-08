@@ -1,4 +1,29 @@
-JUPILER PRO LEAGUE 
+========== POST TEMPLATE ==========
+
+{
+  "title": "Match X : Team A 0-0 Team B",
+  "excerpt": "Résumé du match\nButeurs : ...\nNouveau joueur à suivre : ...",
+  "category": "jupiler",
+  "rating": 3,
+  "favorite": false,
+  "color": "#000000",
+  "url": "posts/game-X.html",
+  "clickable": true
+}
+
+========== NON-CLICKABLE ==========
+
+{
+  "title": "Match X : Team A 0-0 Team B",
+  "excerpt": "...",
+  "category": "jupiler",
+  "rating": 3,
+  "favorite": false,
+  "color": "#000000",
+  "clickable": false
+}
+
+========== JUPILER PRO LEAGUE ========== 
 
 Standard Liège   #ED1C24
 Club Brugge      #0078BF
@@ -6,7 +31,7 @@ STVV             #F5EE42
 Westerlo         #FFD700
 KAAG             #004794
 Charleroi        #0A0A0A 
-Zulte            ##E21350
+Zulte            #E21350
 Anderlecht       #FFFFFF
 Antwerp          #D81636 
 Courtrai         #CA2027
@@ -19,7 +44,7 @@ Genk             #04407E
 RAAL             #006400
 Beveren          #283B7B
 
-Serie A
+========== Serie A ==========
 
 Inter            #010E80
 Udinese          #000000
@@ -29,6 +54,7 @@ Juve             #000000
 Lazio            #87d8f7
 Napoli           #12a0d7
 
-Autres
+========== Autres ==========
 
 Leeds United     #1D428A
+Argentinos Juniors #EB2D31 
