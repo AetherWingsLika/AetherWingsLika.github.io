@@ -191,30 +191,7 @@ header {
   color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .hero {
-    padding-top: 2rem;
-  }
-  .stats {
-    gap: 0.5rem;
-  }
-
   /* ========== STARS ========== */
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 0.7rem;
-  flex-wrap: wrap; /* helps on very small screens */
-}
-
-.card-header h3 {
-  flex: 1;               /* title takes remaining space */
-  margin: 0;
-  font-size: 1.15rem;
-}
-
 .stars {
   display: flex;
   gap: 1px;
@@ -230,11 +207,35 @@ header {
 .star.empty {
   color: #444 !important;   /* empty stars stay dark */
   opacity: 0.7;
+}
 
 .empty-message {
   text-align: center;
   margin: 50px 0;
   opacity: 0.6;
 }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 2rem;
+  }
+  .stats {
+    gap: 0.5rem;
+  }
+
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+  flex-wrap: wrap; /* helps on very small screens */
+}
+
+.card-header h3 {
+  flex: 1;               /* title takes remaining space */
+  margin: 0;
+  font-size: 1.15rem;
 }
 }
