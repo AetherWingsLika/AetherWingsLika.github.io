@@ -1,4 +1,14 @@
 [
+    {
+    "title": "Game 2 : Standard de Liège 3-0 Cercle Brugge",
+    "excerpt": "VAR\nTrouillet Soulier d'Or\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
+    "url": "posts/game-1.html",
+    "category": "jupiler",
+    "rating": 1,
+    "favorite": false,
+    "color": "#ED1C24",
+    "clickable": false
+  }
   {
     "title": "Game 1 : Club Brugge 3-0 Courtrai",
     "excerpt": "Match contrôlé malgré une sortie ratée de Sommer en début de match\nButeurs : Vetlessen, Forbs, Tresoldi\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
