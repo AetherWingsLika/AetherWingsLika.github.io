@@ -63,6 +63,15 @@ function applyFilter(filter) {
     btn.classList.toggle("active", btn.dataset.filter === filter);
   });
 
+  if (filteredPosts.length === 0) {
+    container.innerHTML = `
+      <p class="empty-message">
+        Rien ici pour le moment. Les prochains matchs arrivent bientôt.
+      </p>
+    `;
+    return;
+  }
+
   renderNextBatch();
 }
 
