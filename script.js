@@ -48,10 +48,12 @@ async function loadPostsList() {
 function applyFilter(filter) {
   currentFilter = filter;
   currentIndex = 0;
-  container.innerHTML = ""; // clear previous cards
+  container.innerHTML = "";
 
   if (filter === "all") {
     filteredPosts = [...allPosts];
+  } else if (filter === "favorites") {
+    filteredPosts = allPosts.filter(post => post.favorite === true);
   } else {
     filteredPosts = allPosts.filter(post => post.category === filter);
   }
