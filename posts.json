@@ -5,6 +5,7 @@
     "url": "posts/game-1.html",
     "category": "jupiler",
     "rating": 3,
+    "favorite": false,
     "color": "#3b82f6",
     "clickable": false
   }
