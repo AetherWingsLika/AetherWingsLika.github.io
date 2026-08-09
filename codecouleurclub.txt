@@ -32,7 +32,7 @@ Westerlo         #FFD700
 KAAG             #004794
 Charleroi        #0A0A0A 
 Zulte            #E21350
-Anderlecht       #FFFFFF
+Anderlecht       #4B0082
 Antwerp          #D81636 
 Courtrai         #CA2027
 Cercle Brugge    #5FB22C
