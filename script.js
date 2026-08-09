@@ -122,7 +122,10 @@ function renderNextBatch() {
   loadingEl.classList.remove("hidden");
 
   setTimeout(() => {
-    const next = filteredPosts.slice(currentIndex, currentIndex + POSTS_PER_LOAD);
+    const next = filteredPosts.slice(
+      currentIndex,
+      currentIndex + POSTS_PER_LOAD
+    );
 
     next.forEach((post, i) => {
       container.appendChild(createCard(post, currentIndex + i));
@@ -133,6 +136,10 @@ function renderNextBatch() {
 
     if (currentIndex >= filteredPosts.length) {
       loadingEl.classList.add("hidden");
+    } else {
+      // Re-trigger the observer for the next batch
+      observer.unobserve(loadingEl);
+      observer.observe(loadingEl);
     }
   }, 200);
 }
