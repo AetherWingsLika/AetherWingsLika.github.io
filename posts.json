@@ -70,13 +70,5 @@
     "favorite": false,
     "color": "#0078BF",
     "clickable": false
-  },
-   {
-  "title": "Standard Liège & SL16 FC – Minutes & Stats",
-  "excerpt": "Suivi détaillé des minutes, buts et passes – mis à jour chaque lundi",
-  "category": "stats",
-  "color": "#ED1C24",
-  "url": "posts/stats.html",
-  "clickable": true
-}
+  }
 ]
