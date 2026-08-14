@@ -216,6 +216,23 @@ header {
   opacity: 0.6;
 }
 
+.zoomable {
+  cursor: zoom-in;
+}
+
+.zoomable.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .hero {
