@@ -46,6 +46,13 @@
       background: #111;
     }
   </style>
+  <script>
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      img.classList.toggle("zoomed");
+    });
+  });
+</script>
 </head>
 <body>
   <header>
