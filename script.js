@@ -162,13 +162,18 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const filter = btn.dataset.filter;
 
+    if (filter === "stats") {
+      window.location.href = "posts/stats.html";
+      return;
+    }
+
     if (btn.classList.contains("active") && filter !== "all") {
       applyFilter("all");
     } else {
       applyFilter(filter);
     }
   });
-});
+});;
 
 // Start
 loadPostsList();
