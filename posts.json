@@ -1,5 +1,14 @@
 [
    {
+  "title": "Match 8 : Parma 0-0 Catania - Coppa",
+  "excerpt": "Maitrise totale du match par Parma\nButeurs : Lontani (2)\nNouveau joueur à suivre : Lontani",
+  "category": "autres",
+  "rating": 2,
+  "favorite": false,
+  "color": "#1b4094",
+  "clickable": false
+},
+{
   "title": "Match 7 : Zulte-Waregem 2-1 KRC Genk / Replay",
   "excerpt": "Waar is Jarne ? Waar is Matte ? Aké au top\nButeurs : Aké, Ujka / Durosinmi\nNouveau joueur à suivre : Durosinmi",
   "category": "jupiler",
@@ -66,7 +75,7 @@
   "title": "Standard Liège & SL16 FC – Minutes & Stats",
   "excerpt": "Suivi détaillé des minutes, buts et passes – mis à jour chaque lundi",
   "category": "stats",
-  "color": "#e31c25",
+  "color": "#ED1C24",
   "url": "posts/stats.html",
   "clickable": true
 }
