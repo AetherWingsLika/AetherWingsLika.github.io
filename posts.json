@@ -1,5 +1,14 @@
 [
   {
+  "title": "Match 12 : OHL 0-3 Club Brugge",
+  "excerpt": "Cadeau de Van den Heuvel, la classe de Trésoldi, le nouveau cauchemar Virgili \nButeur : Diakhon - Mechele - Tresoldi\nJoueur à suivre : Virgili",
+  "category": "jupiler",
+  "rating": 2,
+  "favorite": false,
+  "color": "#FFFFFF",
+  "clickable": false
+},
+  {
   "title": "Match 11 : Udinese 1 - 0 Padova - Coppa",
   "excerpt": "Zaniolo - Ekkelenkamp - Vojvodda triangle, pré-saison\nButeur : Davis\nJoueur à suivre : Vojvoda",
   "category": "autres",
