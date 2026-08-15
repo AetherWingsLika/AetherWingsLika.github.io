@@ -1,5 +1,14 @@
 [
    {
+  "title": "Match 10 : Eupen 4-1 Jong Genk - Challenger Pro League",
+  "excerpt": "MT1 équilibrée, démonstration en MT2\nButeurs : Platsun - Van Genechten - Nadje - Vidigal / Myeong-Jun\n Joueur à suivre : Myeong-Jun",
+  "category": "autres",
+  "rating": 3,
+  "favorite": false,
+  "color": "#000000",
+  "clickable": false
+},
+   {
   "title": "Match 9 : Cercle Brugge 3-3 STVV",
   "excerpt": "But rapide STVV - Vide et 1-1 - But (2) STVV, Cercle et fin de match\nButeurs : Ngoura - Nunes - Kouassi / Merlen (2), Ishiwatari\nJoueur à suivre : Merlen",
   "category": "jupiler",
@@ -19,7 +28,7 @@
 },
 {
   "title": "Match 7 : Zulte-Waregem 2-1 KRC Genk / Replay",
-  "excerpt": "Waar is Jarne ? Waar is Matte ? Aké au top\nButeurs : Aké, Ujka / Durosinmi\nNouveau joueur à suivre : Durosinmi",
+  "excerpt": "Waar is Jarne ? Waar is Matte ? Aké au top\nButeurs : Aké - Ujka / Durosinmi\nNouveau joueur à suivre : Durosinmi",
   "category": "jupiler",
   "rating": 3,
   "favorite": false,
@@ -28,7 +37,7 @@
 },
 {
   "title": "Match 6 : RSC Anderlecht 2-1 RAAL",
-  "excerpt": "Domination totale, rouge stupide, sauvé par le gong\nButeurs : Nga Kana, Bertaccini - Isah\nNouveau joueur à suivre : Ambros",
+  "excerpt": "Domination totale, rouge stupide, sauvé par le gong\nButeurs : Nga Kana - Bertaccini / Isah\nNouveau joueur à suivre : Ambros",
   "category": "jupiler",
   "rating": 2,
   "favorite": false,
@@ -37,7 +46,7 @@
 },
    {
   "title": "Match 5 : Sporting Charleroi 3-1 OHL",
-  "excerpt": "Première rouge de la saison\nButeurs : Guiagon (sp), VD Kerkhof, Mbemba - Gil\nTimmyOut",
+  "excerpt": "Première rouge de la saison\nButeurs : Guiagon (sp) - VD Kerkhof - Mbemba / Gil\nTimmyOut",
   "category": "jupiler",
   "rating": 3,
   "favorite": false,
@@ -55,7 +64,7 @@
 },
     {
     "title": "Match 3 : STVV 1-1 Lommel SK",
-    "excerpt": "3/4 du Stayen mais bijou de Sébaoui, blessure de Nypan?\nButeurs : Sébaoui - Seuntjens (sp)\nNouveau joueur à suivre : Nypan, Lommel SK",
+    "excerpt": "3/4 du Stayen mais bijou de Sébaoui, blessure de Nypan?\nButeurs : Sébaoui / Seuntjens (sp)\nNouveau joueur à suivre : Nypan, Lommel SK",
     "category": "jupiler",
     "rating": 2,
     "favorite": false,
@@ -64,7 +73,7 @@
   },
     {
     "title": "Match 2 : Standard de Liège 2-2 Cercle Brugge",
-    "excerpt": "Beaucoup de clowns avec Circus\nButeurs : Ayensa x2 - Mondele, Ravych\nNouveau joueur à suivre : Trouillet, Standard de Liège",
+    "excerpt": "Beaucoup de clowns avec Circus\nButeurs : Ayensa x2 / Mondele - Ravych\nNouveau joueur à suivre : Trouillet, Standard de Liège",
     "category": "jupiler",
     "rating": 3,
     "favorite": false,
@@ -73,7 +82,7 @@
   },
     {
     "title": "Match 1 : Club Brugge 3-0 Courtrai",
-    "excerpt": "Match contrôlé malgré une sortie ratée de Sommer en début de match\nButeurs : Vetlessen, Forbs, Tresoldi (sp)\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
+    "excerpt": "Match contrôlé malgré une sortie ratée de Sommer en début de match\nButeurs : Vetlessen - Forbs - Tresoldi (sp)\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
     "category": "jupiler",
     "rating": 3,
     "favorite": false,
