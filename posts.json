@@ -1,5 +1,14 @@
 [
-  {
+ {
+  "title": "Match 22 : Antwerp 4-4 KRC Genk",
+  "excerpt": "Les relances de Genk, la folie du Boseuil, la patte Erenbjerg\nButeurs : Valencia - Tuypens - Frey 2 (sp)/ Kongolo - Durosinmi - Yokoyama - Bibout\nJoueur à suivre : Van Gelder / Kongolo",
+  "category": "jupiler",
+  "rating": 5,
+  "favorite": true,
+  "color": "#D81E32",
+  "clickable": false
+},
+ {
   "title": "Match 21 : Udinese 1-1 Como",
   "excerpt": "Assist Ekkelenkamp, fautes et Bayo raté de la semaine\nButeurs : Kamara / Douvikas\n Joueurs à suivre : Vojvoda - Ekkelenkamp",
   "category": "serie-a",
@@ -56,7 +65,7 @@
 },
 {
   "title": "Match 15 : KV Malines 3-3 Standard de Liège",
-  "excerpt": "Abid, frustration, changements\nButeurs : Koudou - van Brederode / Nguene - Abid (2)\nJoueur à suivre : Trouillet",
+  "excerpt": "Abid, frustration, changements\nButeurs : Koudou - van Brederode (2 sp) / Nguene - Abid (2)\nJoueur à suivre : Trouillet",
   "category": "jupiler",
   "rating": 3,
   "favorite": false,
