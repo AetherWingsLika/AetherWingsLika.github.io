@@ -55,7 +55,7 @@ if (filter === "all") {
   renderNextBatch();
 }
 
-function createCard(post, index) {
+function createCard(post) {
   const color = post.color;
   const rating = Math.min(Math.max(Number(post.rating) || 0, 0), 5);
 
@@ -107,8 +107,8 @@ function renderNextBatch() {
       currentIndex + POSTS_PER_LOAD
     );
 
-    next.forEach((post, i) => {
-      container.appendChild(createCard(post, currentIndex + i));
+     next.forEach(post => {
+      container.appendChild(createCard(post));
     });
 
     currentIndex += next.length;
@@ -153,7 +153,7 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
       applyFilter(filter);
     }
   });
-});;
+});
 
 // Start
 loadPostsList();
