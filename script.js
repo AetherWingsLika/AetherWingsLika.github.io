@@ -66,7 +66,7 @@ if (filter === "all") {
   if (filteredPosts.length === 0) {
     container.innerHTML = `
       <p class="empty-message">
-        Rien ici pour le moment. Les prochains matchs arrivent bientôt.
+        Rien ici pour le moment. Les prochains matchs/joueurs arrivent bientôt.
       </p>
     `;
     return;
