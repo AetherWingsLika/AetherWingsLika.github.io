@@ -13,36 +13,18 @@ const colors = ["#ef4444", "#22c55e", "#3b82f6", "#a855f7", "#f59e0b", "#06b6d4"
 async function loadPostsList() {
   try {
     const res = await fetch("./posts.json");
-    if (!res.ok) throw new Error("No posts.json");
-    allPosts = await res.json();
-  } catch (err) {
-    console.warn("Using fallback list");
-    allPosts = [
-      {
-        title: "Game 1: Anderlecht vs Club Brugge",
-        excerpt: "A classic Belgian derby full of tension and late drama…",
-        url: "posts/game-1.html",
-        category: "jupiler",
-        color: colors[0]
-      },
-      {
-        title: "Game 2: Inter vs Milan",
-        excerpt: "The Derby della Madonnina never disappoints…",
-        url: "posts/game-2.html",
-        category: "serie-a",
-        color: colors[1]
-      },
-      {
-        title: "Game 3: Random Champions League night",
-        excerpt: "Not everything has to be a big league…",
-        url: "posts/game-3.html",
-        category: "autres",
-        color: colors[2]
-      }
-    ];
-  }
 
-  applyFilter("all");
+    if (!res.ok) {
+      throw new Error("Could not load posts.json");
+    }
+
+    allPosts = await res.json();
+
+    applyFilter("all");
+
+  } catch (err) {
+    console.error("Failed to load posts.json:", err);
+  }
 }
 
 function applyFilter(filter) {
