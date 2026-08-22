@@ -39,7 +39,7 @@ header {
 .hero {
   max-width: 780px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;   /* ← reduced top padding from 3rem to 1.2rem */
+  padding: 3rem 1.5rem 2rem;
   text-align: left;
 }
 
@@ -94,7 +94,7 @@ header {
 .cards {
   max-width: 780px;
   margin: 0 auto;
-  padding: 0 1.5rem 1.5rem;   /* ← changed from 4rem to 1.5rem */
+  padding: 0 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -150,7 +150,7 @@ header {
 .color-dot {
   width: 14px;
   height: 14px;
-  border-radius: 50%;          /* ← this makes it a circle/ball */
+  border-radius: 50%;
   flex-shrink: 0;
 }
 
@@ -158,7 +158,7 @@ header {
 /* Bring the footer closer */
 .site-footer {
   text-align: center;
-  padding: 1.2rem 1.5rem 2.5rem;  /* ← reduced top padding */
+  padding: 1.2rem 1.5rem 2.5rem; 
   font-size: 1.05rem;
   color: var(--muted);
   line-height: 1.6;
@@ -181,10 +181,6 @@ header {
   font-size: 1.1rem;
   margin-left: auto;
   letter-spacing: -1px;
-}
-
-.star.full {
-  /* color is now controlled by the parent .stars */
 }
 
 .star.empty {
@@ -217,18 +213,14 @@ header {
 
 /* Responsive */
 @media (max-width: 600px) {
-    .hero {
-        padding-top: 2rem;
-    }
+  .hero {
+    padding-top: 2rem;
+  }
 
-     .card-header h3 {
-        margin: 0;
-        font-size: 1.15rem;
-    }
-
-    .card-header .stars {
-        /* margin-left: 0; */
-    }
+  .card-header h3 {
+    margin: 0;
+    font-size: 1.15rem;
+  }
 }
 
 /* ========================================
