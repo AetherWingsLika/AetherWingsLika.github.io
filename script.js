@@ -8,8 +8,6 @@ let currentFilter = "all";
 const container = document.getElementById("cards-container");
 const loadingEl = document.getElementById("loading");
 
-const colors = ["#ef4444", "#22c55e", "#3b82f6", "#a855f7", "#f59e0b", "#06b6d4"];
-
 async function loadPostsList() {
   try {
     const res = await fetch("./posts.json");
@@ -58,7 +56,7 @@ if (filter === "all") {
 }
 
 function createCard(post, index) {
-  const color = post.color || colors[index % colors.length];
+  const color = post.color;
   const rating = Math.min(Math.max(Number(post.rating) || 0, 0), 5);
 
   let starsHTML = "";
