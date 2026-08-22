@@ -50,13 +50,13 @@ function applyFilter(filter) {
   currentIndex = 0;
   container.innerHTML = "";
 
-  if (filter === "all") {
-    filteredPosts = [...allPosts];
-  } else if (filter === "favorites") {
-    filteredPosts = allPosts.filter(post => post.favorite === true);
-  } else {
-    filteredPosts = allPosts.filter(post => post.category === filter);
-  }
+if (filter === "all") {
+  filteredPosts = allPosts.filter(post => post.category !== "players");
+} else if (filter === "favorites") {
+  filteredPosts = allPosts.filter(post => post.favorite === true);
+} else {
+  filteredPosts = allPosts.filter(post => post.category === filter);
+}
 
   // Update active button
   document.querySelectorAll(".filter-btn").forEach(btn => {
