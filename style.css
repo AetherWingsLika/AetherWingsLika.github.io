@@ -123,13 +123,6 @@ header {
   margin-bottom: 0.7rem;
 }
 
-.color-dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
-  flex-shrink: 0;
-}
-
 .card h3 {
   font-size: 1.15rem;
   font-weight: 600;
