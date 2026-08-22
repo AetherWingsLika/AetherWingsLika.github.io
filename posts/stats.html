@@ -18,8 +18,7 @@
   <main class="stats-page">
     <h1>Minutes • Buts • Passes</h1>
     <p class="subtitle">Suivi détaillé des joueurs – Saison 2026-2027</p>
-    <p class="update" id="last-update">Dernière mise à jour : ...</p>
-
+    
     <!-- Standard Liège -->
     <section class="stats-section">
       <h2>Standard Liège</h2>
@@ -43,27 +42,6 @@
     img.addEventListener("click", () => {
       img.classList.toggle("zoomed");
     });
-  });
-
-// Get the latest update date from GitHub
-fetch("https://api.github.com/repos/Aetherwingslika/aetherwingslika.github.io/commits?path=images/statsrscl.png&per_page=1")
-  .then(response => response.json())
-  .then(data => {
-    if (data.length > 0) {
-      const date = new Date(data[0].commit.committer.date);
-
-      const formattedDate = date.toLocaleDateString("fr-BE", {
-        day: "numeric",
-        month: "long",
-        year: "numeric"
-      });
-
-      document.getElementById("last-update").textContent =
-        "Dernière mise à jour : " + formattedDate;
-    }
-  })
-  .catch(error => {
-    console.error("Impossible de récupérer la date :", error);
   });
 </script>
 </body>
