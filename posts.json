@@ -29,7 +29,7 @@
   },
   {
     "title": "Jupiler Pro League 15 : RCS Charleroi 2-0 KV Malines",
-    "excerpt": "Marquage sur corner, KaVé insipide\nButeurs : Ousou - VDKerkof\n Joueur à suivre : Van Meirvenne",
+    "excerpt": "Marquage sur corner, KaVé insipide\nButeurs : Ousou - VDKerkhof\n Joueur à suivre : Van Meirvenne",
     "category": "jupiler",
     "rating": 2,
     "color": "#0A0A0A"
@@ -79,21 +79,21 @@
   },
   {
     "title": "Jupiler Pro League 10 : SK Beveren 1-0 RSC Anderlecht",
-    "excerpt": "Comédie de nouvelle règle, centre parfait et arrêts du gardien\nButeur : Gomis\nJoueur à suivre : Ferre Sleger",
+    "excerpt": "Comédie de nouvelle règle, centre parfait et arrêts du gardien\nButeur : Gomis\nJoueur à suivre : Ferre Slegers",
     "category": "jupiler",
     "rating": 3,
     "color": "#283B7B"
   },
   {
     "title": "Jupiler Pro League 9 : OHL 0-3 Club Brugge",
-    "excerpt": "Cadeau de Van den Heuvel, la classe de Trésoldi, le nouveau cauchemar Virgili \nButeur : Diakhon - Mechele - Tresoldi\nJoueur à suivre : Virgili",
+    "excerpt": "Cadeau de Van den Heuvel, la classe de Trésoldi, le nouveau cauchemar Virgili \nButeur : Diakhon - Mechele - Trésoldi\nJoueur à suivre : Virgili",
     "category": "jupiler",
     "rating": 2,
     "color": "#FFFFFF"
   },
   {
     "title": "Autres 3 : Udinese 1 - 0 Padova - Coppa",
-    "excerpt": "Zaniolo - Ekkelenkamp - Vojvodda triangle, pré-saison\nButeur : Davis\nJoueur à suivre : Vojvoda",
+    "excerpt": "Zaniolo - Ekkelenkamp - Vojvoda triangle, pré-saison\nButeur : Davis\nJoueur à suivre : Vojvoda",
     "category": "autres",
     "rating": 1,
     "color": "#000000"
@@ -114,7 +114,7 @@
   },
   {
     "title": "Autres 1 : Parma 2-0 Catania - Coppa",
-    "excerpt": "Maitrise totale de la MT1 par Parma, Catania en contrôle de la MT2 mais rarement dangereux\nButeur : Lontani (2)\nNouveau joueur à suivre : Lontani",
+    "excerpt": "Maîtrise totale de la MT1 par Parma, Catania en contrôle de la MT2 mais rarement dangereux\nButeur : Lontani (2)\nNouveau joueur à suivre : Lontani",
     "category": "autres",
     "rating": 2,
     "color": "#1b4094"
@@ -135,7 +135,7 @@
   },
   {
     "title": "Jupiler Pro League 5 : Sporting Charleroi 3-1 OHL",
-    "excerpt": "Première rouge de la saison\nButeurs : Guiagon (sp) - VD Kerkhof - Mbemba / Gil\nTimmyOut",
+    "excerpt": "Première rouge de la saison\nButeurs : Guiagon (sp) - VDKerkhof - Mbemba / Gil\nTimmyOut",
     "category": "jupiler",
     "rating": 3,
     "color": "#0A0A0A"
@@ -163,7 +163,7 @@
   },
   {
     "title": "Jupiler Pro League 1 : Club Brugge 3-0 Courtrai",
-    "excerpt": "Match contrôlé malgré une sortie ratée de Sommer en début de match\nButeurs : Vetlessen - Forbs - Tresoldi (sp)\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
+    "excerpt": "Match contrôlé malgré une sortie ratée de Sommer en début de match\nButeurs : Vetlessen - Forbs - Trésoldi (sp)\nNouveau joueur à suivre : Han-Beom Lee, Club Brugge",
     "category": "jupiler",
     "rating": 3,
     "color": "#0078BF"
