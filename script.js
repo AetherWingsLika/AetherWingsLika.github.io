@@ -32,8 +32,10 @@ function applyFilter(filter) {
 
 if (filter === "all") {
   filteredPosts = allPosts.filter(post => post.category !== "players");
-} else if (filter === "favorites") {
-  filteredPosts = allPosts.filter(post => post.favorite === true);
+} else if (filter === "top") {
+  filteredPosts = [...allPosts]
+    .filter(post => post.category !== "players")
+    .sort((a, b) => b.rating - a.rating);
 } else {
   filteredPosts = allPosts.filter(post => post.category === filter);
 }
