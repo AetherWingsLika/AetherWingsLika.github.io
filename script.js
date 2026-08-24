@@ -22,7 +22,7 @@ async function loadPostsList() {
     const params = new URLSearchParams(window.location.search);
     const filter = params.get("filter") || "all";
 
-    applyFilter("all");
+    applyFilter(filter);
 
   } catch (err) {
     console.error("Failed to load posts.json:", err);
