@@ -8,6 +8,7 @@ let currentFilter = "all";
 const container = document.getElementById("cards-container");
 const loadingEl = document.getElementById("loading");
 
+if (container && loadingEl) {
 async function loadPostsList() {
   try {
     const res = await fetch("./posts.json");
@@ -157,6 +158,8 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
 // Start
 loadPostsList();
 
+}
+  
 // Image zoom
 document.querySelectorAll(".zoomable").forEach(img => {
   img.addEventListener("click", () => {
