@@ -5,10 +5,8 @@
   "excerpt": "Résumé du match\nButeurs : ...\nNouveau joueur à suivre : ...",
   "category": "jupiler",
   "rating": 3,
-  "favorite": false,
   "color": "#000000",
   "url": "posts/game-X.html",
-  "clickable": true
 }
 
 ========== NON-CLICKABLE ==========
@@ -18,9 +16,7 @@
   "excerpt": "...",
   "category": "jupiler",
   "rating": 3,
-  "favorite": false,
   "color": "#000000",
-  "clickable": false
 }
 
 ========== JUPILER PRO LEAGUE ========== 
