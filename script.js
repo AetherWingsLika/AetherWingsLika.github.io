@@ -156,3 +156,10 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
 
 // Start
 loadPostsList();
+
+// Image zoom
+document.querySelectorAll(".zoomable").forEach(img => {
+  img.addEventListener("click", () => {
+    img.classList.toggle("zoomed");
+  });
+});
