@@ -145,11 +145,6 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const filter = btn.dataset.filter;
 
-    if (filter === "stats") {
-      window.location.href = "stats.html";
-      return;
-    }
-
     if (btn.classList.contains("active") && filter !== "all") {
       applyFilter("all");
     } else {
