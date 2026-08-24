@@ -36,6 +36,10 @@ if (filter === "all") {
   filteredPosts = [...allPosts]
     .filter(post => post.category !== "players")
     .sort((a, b) => b.rating - a.rating);
+} else if (filter === "players") {
+  filteredPosts = [...allPosts]
+    .filter(post => post.category === "players")
+    .sort((a, b) => b.rating - a.rating);
 } else {
   filteredPosts = allPosts.filter(post => post.category === filter);
 }
