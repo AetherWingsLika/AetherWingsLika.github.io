@@ -19,6 +19,9 @@ async function loadPostsList() {
 
     allPosts = await res.json();
 
+    const params = new URLSearchParams(window.location.search);
+    const filter = params.get("filter") || "all";
+
     applyFilter("all");
 
   } catch (err) {
