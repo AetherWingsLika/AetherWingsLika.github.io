@@ -142,7 +142,7 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
     const filter = btn.dataset.filter;
 
     if (filter === "stats") {
-      window.location.href = "posts/stats.html";
+      window.location.href = "stats.html";
       return;
     }
 
