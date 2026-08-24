@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minutes & Stats – Standard & SL16</title>
+  <link rel="stylesheet" href="../style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+</head>
+<body>
+  <header>
+    <a href="../" class="home-btn">Home</a>
+  </header>
+ <section class="hero">
+      <h1>AWLika's match history</h1>
+      <p class="subtitle">
+        Liste des matchs vus en 2026-2027. Jupiler Pro League, Serie A et quelques matchs autour du monde. 
+      </p>
+
+     <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="jupiler">JPL</button>
+      <button class="filter-btn" data-filter="seriea">Serie A</button>
+      <button class="filter-btn" data-filter="autres">Autres</button>
+      <button class="filter-btn" data-filter="players">Joueurs</button>
+      <button class="filter-btn" data-filter="top">Top matchs</button>
+      <button class="filter-btn" data-filter="stats">Stats RSCL</button>
+     </div>
+    </section>
+  <main class="stats-page">
+    <h1>Minutes • Buts • Passes</h1>
+    <p class="subtitle">Suivi détaillé des joueurs – Saison 2026-2027</p>
+    
+    <!-- Standard Liège -->
+    <section class="stats-section">
+      <h2>Standard Liège</h2>
+      <img src="../images/statsrscl.png" alt="Standard Liège - Minutes Buts Passes" class="zoomable">
+    </section>
+
+    <!-- SL16 -->
+    <section class="stats-section">
+      <h2>SL16 FC</h2>
+      <img src="../images/statssl16.png" alt="SL16 FC - Minutes Buts Passes" class="zoomable">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://twitter.com/AetherWingsLika" target="_blank" rel="noopener">
+      Blog by @AetherWingsLika
+    </a>
+  </footer>
+   <script>
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      img.classList.toggle("zoomed");
+    });
+  });
+</script>
+</body>
+</html>
