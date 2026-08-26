@@ -1,0 +1,29 @@
+Autres : 
+    - Lontani       (Parma) 
+    - Myeong-Jun    (Jong Genk)
+    - Vojvoda       (Udinese)
+    - Bragantini    (Mantova)
+    - Vavassori     (Parlermo)
+    - Fofana        (Ol Lyonnais)
+
+Serie A : 
+    - Ekkelenkamp   (Udinese)
+    - Pio Esposito  (Inter)
+
+Jupiler Pro League : 
+    - Han-Boem Lee  (Club Brugge)
+    - Trouillet     (Standard Liège)
+    - Nypan         (Lommel SK)
+    - Vergara       (KAA Gent)
+    - Amrbos        (RSC Anderlecht)
+    - Durosinmi     (KRC Genk)
+    - Merlen        (STVV)
+    - Virgili       (Club Brugge)
+    - Ferre Slegers (SK Beveren)
+    - Tajaouart     (RAAL)
+    - Drammeh       (Standard Liège)
+    - Zalán Átrok   (Zulte-Waregem)
+    - Van Meirvenne (KV Malines)
+    - Van Gelder    (Antwerp)
+    - Kongolo       (KRC Genk)
+    - Sabbe         (Club Brugge)
