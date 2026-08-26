@@ -1,9 +1,16 @@
 [
   {
-    "title": "Serie A · 2 : Inter 4-1 Monza / Replay",
+    "title": "Autres · 6 : OL - Fenerbahçe 2-1 | UCL Qualifiers",
+    "excerpt": "La classe de Fofana, la défense catastrophique de Lyon, les hors-jeu\nButeurs : Fofana / Muriqi - Brown \nJoueur à suivre : Malick Fofana",
+    "category": "autres",
+    "rating": 2,
+    "color": "#E5202E"
+  },
+  {
+    "title": "Serie A · 2 : Inter 4-1 Monza | Replay",
     "excerpt": "Pio x Lauti, Bastoni au poste, Hakan à la frappe\nButeurs : Çalhanoglu - Zielinski - Esposito - Bisseck / Varela\nJoueur à suivre : Pio Esposito",
     "category": "seriea",
-    "rating": 4, 
+    "rating": 4,
     "color": "#010E80"
   },
   {
@@ -57,14 +64,14 @@
     "color": "#ED1C24"
   },
   {
-    "title": "Autres · 5 : Palermo 2-0 Lecce - Coppa",
+    "title": "Autres · 5 : Palermo 2-0 Lecce | Coppa",
     "excerpt": "Inzaghi, stade bien rempli et ratés de Willem Geubbels\nButeurs : Vavassori - Pohjanpalo\nJoueur à suivre : Dominic Vavassori",
     "category": "autres",
     "rating": 4,
     "color": "#f7b7d3"
   },
   {
-    "title": "Autres · 4 : Lazio 0-2 Mantova - Coppa",
+    "title": "Autres · 4 : Lazio 0-2 Mantova | Coppa",
     "excerpt": "Héros derrière, trivela, contre\nButeurs : Ruocco - Cajazzo\nJoueur à suivre : Davide Bragantini",
     "category": "autres",
     "rating": 4,
@@ -99,14 +106,14 @@
     "color": "#FFFFFF"
   },
   {
-    "title": "Autres · 3 : Udinese 1 - 0 Padova - Coppa",
+    "title": "Autres · 3 : Udinese 1 - 0 Padova | Coppa",
     "excerpt": "Zaniolo - Ekkelenkamp - Vojvoda triangle, pré-saison\nButeur : Davis\nJoueur à suivre : Vojvoda",
     "category": "autres",
     "rating": 1,
     "color": "#000000"
   },
   {
-    "title": "Autres · 2 : Eupen 4-1 Jong Genk - Challenger Pro League",
+    "title": "Autres · 2 : Eupen 4-1 Jong Genk | Challenger Pro League",
     "excerpt": "MT1 équilibrée, démonstration en MT2\nButeurs : Platsun - Van Genechten - Nadje - Vidigal / Myeong-Jun\n Joueur à suivre : Myeong-Jun",
     "category": "autres",
     "rating": 3,
@@ -120,14 +127,14 @@
     "color": "#5FB22C"
   },
   {
-    "title": "Autres · 1 : Parma 2-0 Catania - Coppa",
+    "title": "Autres · 1 : Parma 2-0 Catania | Coppa",
     "excerpt": "Maîtrise totale de la MT1 par Parma, Catania en contrôle de la MT2 mais rarement dangereux\nButeur : Lontani (2)\nNouveau joueur à suivre : Lontani",
     "category": "autres",
     "rating": 2,
     "color": "#1b4094"
   },
   {
-    "title": "Jupiler Pro League · 7 : Zulte-Waregem 2-1 KRC Genk / Replay",
+    "title": "Jupiler Pro League · 7 : Zulte-Waregem 2-1 KRC Genk | Replay",
     "excerpt": "Waar is Jarne ? Waar is Matte ? Aké au top\nButeurs : Aké - Ujka / Durosinmi\nNouveau joueur à suivre : Durosinmi",
     "category": "jupiler",
     "rating": 3,
