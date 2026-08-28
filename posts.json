@@ -1,4 +1,12 @@
-[{
+[
+{
+    "title": "Jupiler Pro League · 19 : KRC Genk 4-0 SK Beveren",
+    "excerpt": "Durosinmi quatre sur quatre, une mi-temps suffit, Sleger à la faute\n Buteurs : Durossinmi (sp) - Ito - Kongolo - Kayembe\n Joueur à suivre : Durosinmi / Slegers",
+    "category": "jupiler",
+    "rating": 3,
+    "color": "#04407E" 
+  },
+{
     "title": "Serie A · 3 : AS Roma 4-0 Fiorentina | Replay",
     "excerpt": "La connection Dybala - Malen, la défense de la Fiorentina, les débuts de Lulli\n Buteurs : Malen (3) - Pisilli\n Joueur à suivre : Emanuele Lulli",
     "category": "seriea",
@@ -12,7 +20,7 @@
     "rating": 2,
     "color": "#E5202E"
   },
-  {
+{
     "title": "Serie A · 2 : Inter 4-1 Monza | Replay",
     "excerpt": "Pio x Lauti, Bastoni au poste, Hakan à la frappe\nButeurs : Çalhanoglu - Zielinski - Esposito - Bisseck / Varela\nJoueur à suivre : Pio Esposito",
     "category": "seriea",
