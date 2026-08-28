@@ -9,21 +9,26 @@ Autres :
 Serie A : 
     - Ekkelenkamp   (Udinese)
     - Pio Esposito  (Inter)
+    - Lulli         (AS Roma)
 
 Jupiler Pro League : 
-    - Han-Boem Lee  (Club Brugge)
-    - Trouillet     (Standard Liège)
-    - Nypan         (Lommel SK)
-    - Vergara       (KAA Gent)
-    - Amrbos        (RSC Anderlecht)
-    - Durosinmi     (KRC Genk)
-    - Merlen        (STVV)
-    - Virgili       (Club Brugge)
-    - Ferre Slegers (SK Beveren)
-    - Tajaouart     (RAAL)
-    - Drammeh       (Standard Liège)
-    - Zalán Átrok   (Zulte-Waregem)
-    - Van Meirvenne (KV Malines)
     - Van Gelder    (Antwerp)
-    - Kongolo       (KRC Genk)
+    - Han-Boem Lee  (Club Brugge)
+    - Virgili       (Club Brugge)
     - Sabbe         (Club Brugge)
+    - Vergara       (KAA Gent)
+    - Durosinmi     (KRC Genk)
+    - Kongolo       (KRC Genk)
+    - Van Meirvenne (KV Malines)
+    - Nypan         (Lommel SK)
+    - Tajaouart     (RAAL)
+    - Amrbos        (RSC Anderlecht)
+    - Ferre Slegers (SK Beveren)
+    - Trouillet     (Standard Liège)
+    - Drammeh       (Standard Liège)
+    - Merlen        (STVV)    
+    - Zalán Átrok   (Zulte-Waregem)
+    
+    
+    
+    
