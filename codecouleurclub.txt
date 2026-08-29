@@ -1,13 +1,25 @@
 ========== POST TEMPLATE ==========
-
 {
-  "title": "Match X : Team A 0-0 Team B",
+  "title": "Serie A ·  : - ",
+  "excerpt": "...",
+  "category": "seriea",
+  "rating": 3,
+  "color": "#000000",
+},
+{
+  "title": "Jupiler Pro League ·  : - ",
   "excerpt": "...",
   "category": "jupiler",
   "rating": 3,
   "color": "#000000",
 },
-
+{
+  "title": "Autres ·  : - | ",
+  "excerpt": "...",
+  "category": "autres",
+  "rating": 3,
+  "color": "#000000",
+},
 ========== JUPILER PRO LEAGUE ========== 
 
 Standard Liège   #ED1C24
@@ -39,6 +51,7 @@ Juve             #000000
 Lazio            #87d8f7
 Napoli           #12a0d7
 AS Roma          #8E1F2F
+Monza            #E4022E
 
 ========== Autres ==========
 
