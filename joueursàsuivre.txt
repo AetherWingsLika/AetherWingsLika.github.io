@@ -14,19 +14,21 @@ Serie A :
 Jupiler Pro League : 
     - Van Gelder    (Antwerp)
     - Han-Boem Lee  (Club Brugge)
-    - Virgili       (Club Brugge)
-    - Sabbe         (Club Brugge)
+    - Virgili       
+    - Sabbe         
     - Vergara       (KAA Gent)
     - Durosinmi     (KRC Genk)
-    - Kongolo       (KRC Genk)
+    - Kongolo       
     - Van Meirvenne (KV Malines)
     - Nypan         (Lommel SK)
     - Tajaouart     (RAAL)
-    - Amrbos        (RSC Anderlecht)
+    - Ambros        (RSC Anderlecht)
     - Ferre Slegers (SK Beveren)
     - Trouillet     (Standard Liège)
-    - Drammeh       (Standard Liège)
+    - Drammeh       
+    - Touzghar      
     - Merlen        (STVV)    
+    - Sylla         (USG)
     - Zalán Átrok   (Zulte-Waregem)
     
     

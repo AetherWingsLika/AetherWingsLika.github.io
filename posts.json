@@ -1,5 +1,19 @@
 [
 {
+  "title": "Serie A · 4 : Cagliari 0-0 Inter ",
+  "excerpt": "Hakan simple, le physique de Pio\n Buteur : Calhanoglu\n Joueur à suivre : Pio Esposito",
+  "category": "seriea",
+  "rating": 2,
+  "color": "#002350"
+},
+{
+  "title": "Jupiler Pro League · 25 : USG 3-0 RSC Anderlecht ",
+  "excerpt": "Domination quasi sans partage\n Buteurs : Zeneli - Biondic - Florucz\n Joueur à suivre : Massiré Sylla",
+  "category": "jupiler",
+  "rating": 3,
+  "color": "#FDDB10"
+},
+{
   "title": "Jupiler Pro League · 24 : Antwerp 1-4 STVV",
   "excerpt": "La sortie de Nozawa, l'inverse du match de Genk, Sebaoui dans toute les actions\n Buteurs : Porozo - Araki - Bazdar (2) - Matsuzawa\n Joueur à suivre : Tuypens",
   "category": "jupiler",
@@ -36,7 +50,7 @@
 },
 {
     "title": "Jupiler Pro League · 19 : KRC Genk 4-0 SK Beveren",
-    "excerpt": "Durosinmi quatre sur quatre, une mi-temps suffit, Sleger à la faute\n Buteurs : Durossinmi (sp) - Ito - Kongolo - Kayembe\n Joueur à suivre : Durosinmi / Slegers",
+    "excerpt": "Durosinmi quatre sur quatre, Kongolo superstar, Sleger à la faute\n Buteurs : Durossinmi (sp) - Ito - Kongolo - Kayembe\n Joueur à suivre : Durosinmi / Slegers",
     "category": "jupiler",
     "rating": 3,
     "color": "#04407E" 
@@ -49,7 +63,7 @@
     "color": "#8E1F2F"
 },
   {
-    "title": "Autres · 6 : OL - Fenerbahçe 2-1 | UCL Qualifiers",
+    "title": "Autres · 6 : OL 2-1 Fenerbahçe | UCL Qualifiers",
     "excerpt": "La classe de Fofana, la défense catastrophique de Lyon, les hors-jeu\nButeurs : Fofana / Muriqi - Brown \nJoueur à suivre : Malick Fofana",
     "category": "autres",
     "rating": 2,

@@ -1,24 +1,24 @@
 ========== POST TEMPLATE ==========
 {
   "title": "Serie A ·  : - ",
-  "excerpt": "...",
+  "excerpt": "...\n\n",
   "category": "seriea",
   "rating": 3,
-  "color": "#000000",
+  "color": "#000000"
 },
 {
   "title": "Jupiler Pro League ·  : - ",
-  "excerpt": "...",
+  "excerpt": "...\n\n",
   "category": "jupiler",
   "rating": 3,
-  "color": "#000000",
+  "color": "#000000"
 },
 {
   "title": "Autres ·  : - | ",
-  "excerpt": "...",
+  "excerpt": "...\n\n",
   "category": "autres",
   "rating": 3,
-  "color": "#000000",
+  "color": "#000000"
 },
 ========== JUPILER PRO LEAGUE ========== 
 
@@ -26,7 +26,7 @@ Standard Liège   #ED1C24
 Club Brugge      #0078BF
 STVV             #F5EE42
 Westerlo         #FFD700
-KAAG             #004794
+KAA Gent         #004794
 Charleroi        #0A0A0A 
 Zulte            #E21350
 Anderlecht       #4B0082
@@ -47,11 +47,12 @@ Inter            #010E80
 Udinese          #000000
 Como             #073F6A
 Milan            #fb090b
-Juve             #000000
+Juventus         #000000
 Lazio            #87d8f7
 Napoli           #12a0d7
 AS Roma          #8E1F2F
 Monza            #E4022E
+Cagliari         #002350 
 
 ========== Autres ==========
 
