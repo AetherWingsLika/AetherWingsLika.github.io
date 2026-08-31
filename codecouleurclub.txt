@@ -43,16 +43,17 @@ Beveren          #283B7B
 
 ========== Serie A ==========
 
-Inter            #010E80
-Udinese          #000000
-Como             #073F6A
-Milan            #fb090b
-Juventus         #000000
-Lazio            #87d8f7
-Napoli           #12a0d7
-AS Roma          #8E1F2F
-Monza            #E4022E
-Cagliari         #002350 
+Inter       #010E80
+Udinese     #000000
+Como        #073F6A
+Milan       #fb090b
+Juventus    #000000
+Lazio       #87d8f7
+Napoli      #12a0d7
+AS Roma     #8E1F2F
+Monza       #E4022E
+Cagliari    #002350
+Lecce       #E51937
 
 ========== Autres ==========
 
