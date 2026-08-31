@@ -54,6 +54,7 @@ AS Roma     #8E1F2F
 Monza       #E4022E
 Cagliari    #002350
 Lecce       #E51937
+Atalanta    #3975B7
 
 ========== Autres ==========
 
