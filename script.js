@@ -4,6 +4,7 @@ let allPosts = [];
 let filteredPosts = [];
 let isLoading = false;
 let currentFilter = "all";
+let searchTerm = "";
 
 const container = document.getElementById("cards-container");
 const loadingEl = document.getElementById("loading");
@@ -47,6 +48,16 @@ if (filter === "all") {
 } else {
   filteredPosts = allPosts.filter(post => post.category === filter);
 }
+
+if (searchTerm) {
+    const search = searchTerm.toLowerCase();
+
+    filteredPosts = filteredPosts.filter(post =>
+      `${post.title} ${post.excerpt}`.toLowerCase().includes(search)
+    );
+  }
+
+
 
   // Update active button
   document.querySelectorAll(".filter-btn").forEach(btn => {
@@ -151,6 +162,14 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
       applyFilter(filter);
     }
   });
+});
+
+// Search
+const searchInput = document.getElementById("search");
+
+searchInput.addEventListener("input", () => {
+  searchTerm = searchInput.value.trim();
+  applyFilter(currentFilter);
 });
 
 // Start
