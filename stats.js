@@ -48,15 +48,21 @@ Promise.all([
   fetch("./joueurs.json").then(response => response.json())
 ]).then(([perfs, matchs, joueurs]) => {
 
+  const matchIds = Object.keys(perfs);
+
   const headerRow = document.querySelector(".player-stats thead tr");
 
-  Object.keys(perfs).forEach(matchId => {
+  matchIds.forEach((matchId, index) => {
 
     const match = matchs[matchId];
 
     const header = document.createElement("th");
 
     header.colSpan = 3;
+
+    if (index === 0) {
+      header.classList.add("match-start");
+    }
 
     header.textContent = `${match.opp} · ${match.venue} · ${match.score}`;
 
@@ -87,7 +93,7 @@ Promise.all([
     let GTOT = 0;
     let ATOT = 0;
 
-    Object.keys(perfs).forEach(matchId => {
+    matchIds.forEach(matchId => {
 
       const performance = perfs[matchId][playerId];
 
@@ -133,11 +139,16 @@ Promise.all([
     atotCell.textContent = ATOT;
     row.appendChild(atotCell);
 
-    Object.keys(perfs).forEach(matchId => {
+    matchIds.forEach((matchId, index) => {
 
       const performance = perfs[matchId][playerId];
 
       const minCell = document.createElement("td");
+
+      if (index === 0) {
+        minCell.classList.add("match-start");
+      }
+
       minCell.textContent = performance ? performance[0] : 0;
       row.appendChild(minCell);
 

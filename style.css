@@ -345,3 +345,7 @@ header {
 .player-stats tbody tr:hover {
   background: #222;
 }
+
+.player-stats .match-start {
+  border-left: 3px solid #555;
+}
