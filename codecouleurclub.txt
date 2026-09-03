@@ -62,3 +62,36 @@ Leeds United     #1D428A
 Argentinos Jrs   #EB2D31 
 OL               #E5202E #0F23AA
 
+Autres : 
+    - Lontani       (Parma) 
+    - Myeong-Jun    (Jong Genk)
+    - Vojvoda       (Udinese)
+    - Bragantini    (Mantova)
+    - Vavassori     (Parlermo)
+    - Fofana        (Ol Lyonnais)
+
+Serie A : 
+    - Ekkelenkamp   (Udinese)
+    - Pio Esposito  (Inter)
+    - Lulli         (AS Roma)
+
+Jupiler Pro League : 
+    - Van Gelder    (Antwerp)
+    - Han-Boem Lee  (Club Brugge)
+    - Virgili       
+    - Sabbe         
+    - Vergara       (KAA Gent)
+    - Durosinmi     (KRC Genk)
+    - Kongolo       
+    - Van Meirvenne (KV Malines)
+    - Nypan         (Lommel SK)
+    - Tajaouart     (RAAL)
+    - Ambros        (RSC Anderlecht)
+    - Ferre Slegers (SK Beveren)
+    - Trouillet     (Standard Liège)
+    - Drammeh       
+    - Touzghar      
+    - Merlen        (STVV)    
+    - Sylla         (USG)
+    - Zalán Átrok   (Zulte-Waregem)
+   
