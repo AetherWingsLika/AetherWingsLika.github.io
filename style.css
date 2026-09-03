@@ -328,12 +328,17 @@ header {
 .player-stats th {
   font-weight: 600;
   font-size: 0.9rem;
+  background-color: var(--card-bg);
 }
 
 .player-stats td {
   font-size: 0.95rem;
   background-color: #ffffff;
   color: #111111;
+}
+
+.player-stats th:nth-child(-n + 8) {
+  z-index: 3;
 }
 
 .player-stats th:first-child,
