@@ -432,3 +432,19 @@ header {
   min-width: 40px;
   border-right: 3px solid #555;
 }
+
+/* Match columns */
+
+.player-stats th:nth-child(3n + 9),
+.player-stats td:nth-child(3n + 9) {
+  width: 40px;
+  min-width: 40px;
+}
+
+.player-stats th:nth-child(3n + 10),
+.player-stats td:nth-child(3n + 10),
+.player-stats th:nth-child(3n + 11),
+.player-stats td:nth-child(3n + 11) {
+  width: 30px;
+  min-width: 30px;
+}
