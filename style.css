@@ -435,4 +435,5 @@ header {
   z-index: 2;
   width: 40px;
   min-width: 40px;
+  border-right: 3px solid #555;
 }

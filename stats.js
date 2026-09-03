@@ -43,6 +43,10 @@ const playerOrder = [
   "59"
 ];
 
+function displayValue(value) {
+  return value === 0 ? "" : value;
+}
+
 Promise.all([
   fetch("./perfs.json").then(response => response.json()),
   fetch("./matchs.json").then(response => response.json()),
@@ -120,25 +124,25 @@ Promise.all([
 
     // P
     const pCell = document.createElement("td");
-    pCell.textContent = P;
+    pCell.textContent = displayValue(P);
     pCell.style.backgroundColor = "#D4F4F1";
     row.appendChild(pCell);
 
     // T
     const tCell = document.createElement("td");
-    tCell.textContent = T;
+    tCell.textContent = displayValue(T);
     tCell.style.backgroundColor = "#E3F2D9";
     row.appendChild(tCell);
 
     // R
     const rCell = document.createElement("td");
-    rCell.textContent = R;
+    rCell.textContent = displayValue(R);
     rCell.style.backgroundColor = "#FFF2CA";
     row.appendChild(rCell);
 
     // MIN
     const minCell = document.createElement("td");
-    minCell.textContent = MIN;
+    minCell.textContent = displayValue(MIN);
     row.appendChild(minCell);
 
     // GTOT
@@ -148,14 +152,14 @@ Promise.all([
       gtotCell.textContent = Math.abs(GTOT);
       gtotCell.style.color = "red";
     } else {
-      gtotCell.textContent = GTOT;
+      gtotCell.textContent = displayValue(GTOT);
     }
 
     row.appendChild(gtotCell);
 
     // ATOT
     const atotCell = document.createElement("td");
-    atotCell.textContent = ATOT;
+    atotCell.textContent = displayValue(ATOT);
     row.appendChild(atotCell);
 
     // Match-by-match data
@@ -171,7 +175,7 @@ Promise.all([
 
       if (performance) {
 
-        minMatchCell.textContent = performance[0];
+        minMatchCell.textContent = displayValue(performance[0]);
 
         // Starter
         if (performance[3]) {
@@ -186,7 +190,7 @@ Promise.all([
       } else {
 
         // Player was not on the bench
-        minMatchCell.textContent = 0;
+        minMatchCell.textContent = displayValue(0);
 
       }
 
@@ -201,7 +205,7 @@ Promise.all([
           gCell.textContent = Math.abs(performance[1]);
           gCell.style.color = "red";
         } else {
-          gCell.textContent = performance[1];
+          gCell.textContent = displayValue(performance[1]);
         }
 
         if (performance[3]) {
@@ -212,7 +216,7 @@ Promise.all([
 
       } else {
 
-        gCell.textContent = 0;
+        gCell.textContent = displayValue(0);
 
       }
 
@@ -223,7 +227,7 @@ Promise.all([
 
       if (performance) {
 
-        aCell.textContent = performance[2];
+        aCell.textContent = displayValue(performance[2]);
 
         if (performance[3]) {
           aCell.style.backgroundColor = "#E3F2D9";
@@ -233,7 +237,7 @@ Promise.all([
 
       } else {
 
-        aCell.textContent = 0;
+        aCell.textContent = displayValue(0);
 
       }
 
