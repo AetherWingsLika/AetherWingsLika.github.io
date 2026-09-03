@@ -322,7 +322,6 @@ header {
 .player-stats td {
   padding: 7px 10px;
   text-align: center;
-  border-bottom: 1px solid #2a2a2a;
 }
 
 .player-stats th {
@@ -344,10 +343,6 @@ header {
 .player-stats th:first-child,
 .player-stats td:first-child {
   text-align: left;
-}
-
-.player-stats tbody tr:last-child td {
-  border-bottom: none;
 }
 
 .player-stats tbody tr:hover {
