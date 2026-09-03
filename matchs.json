@@ -1,0 +1,142 @@
+{
+    "JPL1": {
+        "opp": "Cercle",
+        "venue": "home"
+    },
+    "JPL2": {
+        "opp": "KV Mechelen",
+        "venue": "away"
+    },
+    "JPL3": {
+        "opp": "RAAL",
+        "venue": "home"
+    },
+    "JPL4": {
+        "opp": "OHL",
+        "venue": "away"
+    },
+    "JPL5": {
+        "opp": "Antwerp",
+        "venue": "home"
+    },
+    "JPL6": {
+        "opp": "KVC Westerlo",
+        "venue": "away"
+    },
+    "JPL7": {
+        "opp": "KAA Gent",
+        "venue": "away"
+    },
+    "JPL8": {
+        "opp": "Charleroi",
+        "venue": "home"
+    },
+    "JPL9": {
+        "opp": "KRC Genk",
+        "venue": "away"
+    },
+    "JPL10": {
+        "opp": "KV Kortrijk",
+        "venue": "home"
+    },
+    "JPL11": {
+        "opp": "SK Beveren",
+        "venue": "home"
+    },
+    "JPL12": {
+        "opp": "Lommel SK",
+        "venue": "away"
+    },
+    "JPL13": {
+        "opp": "Club Brugge",
+        "venue": "home"
+    },
+    "JPL14": {
+        "opp": "Zulte Waregem",
+        "venue": "away"
+    },
+    "JPL15": {
+        "opp": "RSC Anderlecht",
+        "venue": "home"
+    },
+    "JPL16": {
+        "opp": "USG",
+        "venue": "home"
+    },
+    "JPL17": {
+        "opp": "STVV",
+        "venue": "away"
+    },
+    "JPL18": {
+        "opp": "KVC Westerlo",
+        "venue": "home"
+    },
+    "JPL19": {
+        "opp": "Cercle",
+        "venue": "away"
+    },
+    "JPL20": {
+        "opp": "Club Brugge",
+        "venue": "away"
+    },
+    "JPL21": {
+        "opp": "Zulte Waregem",
+        "venue": "home"
+    },
+    "JPL22": {
+        "opp": "Charleroi",
+        "venue": "away"
+    },
+    "JPL23": {
+        "opp": "KAA Gent",
+        "venue": "home"
+    },
+    "JPL24": {
+        "opp": "USG",
+        "venue": "away"
+    },
+    "JPL25": {
+        "opp": "KV Mechelen",
+        "venue": "home"
+    },
+    "JPL26": {
+        "opp": "RSC Anderlecht",
+        "venue": "away"
+    },
+    "JPL27": {
+        "opp": "STVV",
+        "venue": "home"
+    },
+    "JPL28": {
+        "opp": "KV Kortrijk",
+        "venue": "away"
+    },
+    "JPL29": {
+        "opp": "OHL",
+        "venue": "home"
+    },
+    "JPL30": {
+        "opp": "RAAL",
+        "venue": "away"
+    },
+    "JPL31": {
+        "opp": "Lommel SK",
+        "venue": "home"
+    },
+    "JPL32": {
+        "opp": "Antwerp",
+        "venue": "away"
+    },
+    "JPL33": {
+        "opp": "KRC Genk",
+        "venue": "home"
+    },
+    "JPL34": {
+        "opp": "SK Beveren",
+        "venue": "away"
+    },
+    "CUP1": {
+        "opp": "unknown",
+        "venue": "unknown"
+    }
+}

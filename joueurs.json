@@ -1,0 +1,110 @@
+{
+    "1": {
+        "name": "Epolo",
+        "position": "GK"
+    },
+    "21": {
+        "name": "Pirard",
+        "position": "GK"
+    },
+    "35": {
+        "name": "Dizdarevic",
+        "position": "GK"
+    },
+    "3": {
+        "name": "Mortensen",
+        "position": "DG"
+    },
+    "4": {
+        "name": "Lavalée",
+        "position": "DC"
+    },
+    "20": {
+        "name": "Karamoko",
+        "position": "DC"
+    },
+    "24": {
+        "name": "Homawoo",
+        "position": "DC"
+    },
+    "25": {
+        "name": "Hautekiet",
+        "position": "DC"
+    },
+    "29": {
+        "name": "Dierckx",
+        "position": "DC"
+    },
+    "34": {
+        "name": "Sy",
+        "position": "DC"
+    },
+    "13": {
+        "name": "Fossey",
+        "position": "DD"
+    },
+    "18": {
+        "name": "Lawrence",
+        "position": "DD"
+    },
+    "6": {
+        "name": "Goemaere",
+        "position": "MDC"
+    },
+    "23": {
+        "name": "Ilhaimaharitra",
+        "position": "MDC"
+    },
+    "80": {
+        "name": "Fosso",
+        "position": "MDC"
+    },
+    "26": {
+        "name": "Trouillet",
+        "position": "MDC/MC"
+    },
+    "27": {
+        "name": "El Hankouri",
+        "position": "MC"
+    },
+    "84": {
+        "name": "Touzghar",
+        "position": "MC"
+    },
+    "94": {
+        "name": "Nielsen",
+        "position": "MC"
+    },
+    "7": {
+        "name": "Mohr",
+        "position": "MG/DG"
+    },
+    "11": {
+        "name": "Abid",
+        "position": "Ailier"
+    },
+    "15": {
+        "name": "Drammeh",
+        "position": "Ailier"
+    },
+    "19": {
+        "name": "Jasper",
+        "position": "Ailier"
+    },
+    "10": {
+        "name": "Ayensa",
+        "position": "BU"
+    },
+    "17": {
+        "name": "Nguené",
+        "position": "Ailier/BU"
+    },
+    "77": {
+        "name": "Nsimba",
+        "position": "BU"
+    },
+    "59": {
+        "name": "Nkada",
+        "position": "BU"
+    }
+}
