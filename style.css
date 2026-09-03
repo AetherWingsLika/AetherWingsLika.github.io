@@ -309,7 +309,8 @@ header {
 
 .player-stats {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin-top: 20px;
   background: var(--card-bg);
   border: 1px solid #2a2a2a;
@@ -331,6 +332,8 @@ header {
 
 .player-stats td {
   font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 .player-stats th:first-child,
@@ -346,11 +349,85 @@ header {
   background: #222;
 }
 
+/* Match separator */
+
 .player-stats .match-start {
   border-left: 3px solid #555;
 }
 
-.player-stats td {
-  background-color: #ffffff;
-  color: #111111;
+
+/* =========================
+   Sticky player information
+   ========================= */
+
+.player-stats th:nth-child(1),
+.player-stats td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  min-width: 50px;
+}
+
+.player-stats th:nth-child(2),
+.player-stats td:nth-child(2) {
+  position: sticky;
+  left: 50px;
+  z-index: 2;
+  width: 150px;
+  min-width: 150px;
+}
+
+.player-stats th:nth-child(3),
+.player-stats td:nth-child(3) {
+  position: sticky;
+  left: 200px;
+  z-index: 2;
+  width: 45px;
+  min-width: 45px;
+}
+
+.player-stats th:nth-child(4),
+.player-stats td:nth-child(4) {
+  position: sticky;
+  left: 245px;
+  z-index: 2;
+  width: 45px;
+  min-width: 45px;
+}
+
+.player-stats th:nth-child(5),
+.player-stats td:nth-child(5) {
+  position: sticky;
+  left: 290px;
+  z-index: 2;
+  width: 45px;
+  min-width: 45px;
+}
+
+.player-stats th:nth-child(6),
+.player-stats td:nth-child(6) {
+  position: sticky;
+  left: 335px;
+  z-index: 2;
+  width: 65px;
+  min-width: 65px;
+}
+
+.player-stats th:nth-child(7),
+.player-stats td:nth-child(7) {
+  position: sticky;
+  left: 400px;
+  z-index: 2;
+  width: 65px;
+  min-width: 65px;
+}
+
+.player-stats th:nth-child(8),
+.player-stats td:nth-child(8) {
+  position: sticky;
+  left: 465px;
+  z-index: 2;
+  width: 65px;
+  min-width: 65px;
 }
