@@ -61,8 +61,13 @@ function displayValue(value) {
 // Render stats table
 // ========================================
 
-function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null) {
-
+function displayStats(
+  perfsFile,
+  matchsFile,
+  joueursFile,
+  tbodyId,
+  order = null
+) {
   Promise.all([
     fetch(perfsFile).then(response => response.json()),
     fetch(matchsFile).then(response => response.json()),
@@ -82,9 +87,7 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
     // ========================================
 
     matchIds.forEach(matchId => {
-
       const match = matchs[matchId];
-
       const header = document.createElement("th");
 
       header.colSpan = 3;
@@ -106,17 +109,37 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
     let playersToDisplay;
 
     if (order) {
-
       // Standard team - predefined order
       playersToDisplay = order;
-
     } else {
-
       // U23 - numerical order
       playersToDisplay = Object.keys(joueurs).sort(
         (a, b) => Number(a) - Number(b)
       );
     }
+
+
+    // ========================================
+    // Grand totals
+    // ========================================
+
+    let totalP = 0;
+    let totalT = 0;
+    let totalR = 0;
+    let totalMIN = 0;
+    let totalG = 0;
+    let totalA = 0;
+
+    // Match-by-match totals
+    const matchTotals = {};
+
+    matchIds.forEach(matchId => {
+      matchTotals[matchId] = {
+        MIN: 0,
+        G: 0,
+        A: 0
+      };
+    });
 
 
     // ========================================
@@ -181,6 +204,7 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
           GTOT += performance[1];
           ATOT += performance[2];
 
+
           // Starter
           if (performance[3]) {
 
@@ -198,13 +222,28 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
 
 
       // ========================================
+      // Add to grand totals
+      // ========================================
+
+      totalP += P;
+      totalT += T;
+      totalR += R;
+      totalMIN += MIN;
+      totalA += ATOT;
+
+      // Exclude goalkeeper goals from Total G
+      if (player.position !== "GK") {
+        totalG += GTOT;
+      }
+
+
+      // ========================================
       // P
       // ========================================
 
       const pCell = document.createElement("td");
 
       pCell.textContent = displayValue(P);
-
       pCell.style.backgroundColor = "#D4F4F1";
 
       row.appendChild(pCell);
@@ -217,7 +256,6 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
       const tCell = document.createElement("td");
 
       tCell.textContent = displayValue(T);
-
       tCell.style.backgroundColor = "#E3F2D9";
 
       row.appendChild(tCell);
@@ -230,7 +268,6 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
       const rCell = document.createElement("td");
 
       rCell.textContent = displayValue(R);
-
       rCell.style.backgroundColor = "#FFF2CA";
 
       row.appendChild(rCell);
@@ -256,7 +293,6 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
       if (GTOT < 0) {
 
         gtotCell.textContent = Math.abs(GTOT);
-
         gtotCell.style.color = "red";
 
       } else {
@@ -301,6 +337,10 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
           minMatchCell.textContent =
             displayValue(performance[0]);
 
+          // Add to match total
+          matchTotals[matchId].MIN += performance[0];
+
+
           // Starter
           if (performance[3]) {
 
@@ -332,7 +372,6 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
           if (performance[1] < 0) {
 
             gCell.textContent = Math.abs(performance[1]);
-
             gCell.style.color = "red";
 
           } else {
@@ -340,6 +379,13 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
             gCell.textContent =
               displayValue(performance[1]);
           }
+
+
+          // Add to match total only if not GK
+          if (player.position !== "GK") {
+            matchTotals[matchId].G += performance[1];
+          }
+
 
           // Starter
           if (performance[3]) {
@@ -371,6 +417,10 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
           aCell.textContent =
             displayValue(performance[2]);
 
+          // Add to match total
+          matchTotals[matchId].A += performance[2];
+
+
           // Starter
           if (performance[3]) {
 
@@ -388,15 +438,169 @@ function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null)
         }
 
         row.appendChild(aCell);
-
       });
 
 
       // Add player row
       tbody.appendChild(row);
-
     });
 
+
+    // ========================================
+    // TOTAL ROW
+    // ========================================
+
+    const totalRow = document.createElement("tr");
+
+    totalRow.classList.add("stats-total");
+
+
+    // ========================================
+    // Total label
+    // ========================================
+
+    const totalLabelCell = document.createElement("td");
+
+    totalLabelCell.colSpan = 2;
+    totalLabelCell.textContent = "Total";
+
+    totalRow.appendChild(totalLabelCell);
+
+
+    // ========================================
+    // Total P
+    // ========================================
+
+    const totalPCell = document.createElement("td");
+
+    totalPCell.textContent = displayValue(totalP);
+    totalPCell.style.backgroundColor = "#D4F4F1";
+
+    totalRow.appendChild(totalPCell);
+
+
+    // ========================================
+    // Total T
+    // ========================================
+
+    const totalTCell = document.createElement("td");
+
+    totalTCell.textContent = displayValue(totalT);
+    totalTCell.style.backgroundColor = "#E3F2D9";
+
+    totalRow.appendChild(totalTCell);
+
+
+    // ========================================
+    // Total R
+    // ========================================
+
+    const totalRCell = document.createElement("td");
+
+    totalRCell.textContent = displayValue(totalR);
+    totalRCell.style.backgroundColor = "#FFF2CA";
+
+    totalRow.appendChild(totalRCell);
+
+
+    // ========================================
+    // Total MIN
+    // ========================================
+
+    const totalMINCell = document.createElement("td");
+
+    totalMINCell.textContent = displayValue(totalMIN);
+
+    totalRow.appendChild(totalMINCell);
+
+
+    // ========================================
+    // Total Goals
+    // ========================================
+
+    const totalGCell = document.createElement("td");
+
+    if (totalG < 0) {
+
+      totalGCell.textContent = Math.abs(totalG);
+      totalGCell.style.color = "red";
+
+    } else {
+
+      totalGCell.textContent = displayValue(totalG);
+    }
+
+    totalRow.appendChild(totalGCell);
+
+
+    // ========================================
+    // Total Assists
+    // ========================================
+
+    const totalACell = document.createElement("td");
+
+    totalACell.textContent = displayValue(totalA);
+
+    totalRow.appendChild(totalACell);
+
+
+    // ========================================
+    // Match-by-match totals
+    // ========================================
+
+    matchIds.forEach(matchId => {
+
+      // ====================================
+      // MIN
+      // ====================================
+
+      const totalMinMatchCell = document.createElement("td");
+
+      totalMinMatchCell.classList.add("match-start");
+
+      totalMinMatchCell.textContent =
+        displayValue(matchTotals[matchId].MIN);
+
+      totalRow.appendChild(totalMinMatchCell);
+
+
+      // ====================================
+      // Goals
+      // ====================================
+
+      const totalGMatchCell = document.createElement("td");
+
+      const matchG = matchTotals[matchId].G;
+
+      if (matchG < 0) {
+
+        totalGMatchCell.textContent = Math.abs(matchG);
+        totalGMatchCell.style.color = "red";
+
+      } else {
+
+        totalGMatchCell.textContent =
+          displayValue(matchG);
+      }
+
+      totalRow.appendChild(totalGMatchCell);
+
+
+      // ====================================
+      // Assists
+      // ====================================
+
+      const totalAMatchCell = document.createElement("td");
+
+      totalAMatchCell.textContent =
+        displayValue(matchTotals[matchId].A);
+
+      totalRow.appendChild(totalAMatchCell);
+    });
+
+
+    // Add total row at the bottom
+    tbody.appendChild(totalRow);
   });
 }
 
