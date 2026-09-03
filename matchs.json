@@ -1,142 +1,177 @@
 {
     "JPL1": {
         "opp": "Cercle",
-        "venue": "home"
+        "venue": "H",
+        "score": "2-2"
     },
     "JPL2": {
         "opp": "KV Mechelen",
-        "venue": "away"
+        "venue": "A",
+        "score": "3-3"
     },
     "JPL3": {
         "opp": "RAAL",
-        "venue": "home"
+        "venue": "H",
+        "score": "2-0"
     },
     "JPL4": {
         "opp": "OHL",
-        "venue": "away"
+        "venue": "A",
+        "score": "1-2"
     },
     "JPL5": {
         "opp": "Antwerp",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL6": {
         "opp": "KVC Westerlo",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL7": {
         "opp": "KAA Gent",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL8": {
         "opp": "Charleroi",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL9": {
         "opp": "KRC Genk",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL10": {
         "opp": "KV Kortrijk",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL11": {
         "opp": "SK Beveren",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL12": {
         "opp": "Lommel SK",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL13": {
         "opp": "Club Brugge",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL14": {
         "opp": "Zulte Waregem",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL15": {
         "opp": "RSC Anderlecht",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL16": {
         "opp": "USG",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL17": {
         "opp": "STVV",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL18": {
         "opp": "KVC Westerlo",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL19": {
         "opp": "Cercle",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL20": {
         "opp": "Club Brugge",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL21": {
         "opp": "Zulte Waregem",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL22": {
         "opp": "Charleroi",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL23": {
         "opp": "KAA Gent",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL24": {
         "opp": "USG",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL25": {
         "opp": "KV Mechelen",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL26": {
         "opp": "RSC Anderlecht",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL27": {
         "opp": "STVV",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL28": {
         "opp": "KV Kortrijk",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL29": {
         "opp": "OHL",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL30": {
         "opp": "RAAL",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL31": {
         "opp": "Lommel SK",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL32": {
         "opp": "Antwerp",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "JPL33": {
         "opp": "KRC Genk",
-        "venue": "home"
+        "venue": "H",
+        "score": "0-0"
     },
     "JPL34": {
         "opp": "SK Beveren",
-        "venue": "away"
+        "venue": "A",
+        "score": "0-0"
     },
     "CUP1": {
         "opp": "unknown",
-        "venue": "unknown"
+        "venue": "unknown",
+        "score": "0-0"
     }
 }

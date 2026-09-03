@@ -62,9 +62,3 @@ Leeds United     #1D428A
 Argentinos Jrs   #EB2D31 
 OL               #E5202E #0F23AA
 
-// JS 
-
-performance[0] // minutes
-performance[1] // goals
-performance[2] // assists
-performance[3] // starter
