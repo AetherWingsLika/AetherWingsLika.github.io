@@ -451,3 +451,17 @@ header {
 .stats-section h2 {
   text-align: center;
 }
+
+.player-stats tbody tr:hover {
+  background: #222;
+}
+
+/* Total row separator */
+.player-stats .stats-total td {
+  border-top: 1px solid #555;
+}
+
+/* Match separator */
+.player-stats .match-start {
+  border-left: 3px solid #555;
+}
