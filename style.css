@@ -94,10 +94,12 @@ header {
   font-weight: 600;
 }
 
+/* Search box */
+
 .search-box {
   width: 220px;
-  margin-top: 0.5rem;
-  padding: 0.4rem 0.65rem;
+  margin-top: 0.4rem;
+  padding: 0.35rem 0.65rem;
   background: #1a1a1a;
   border: 1px solid #333;
   border-radius: 8px;
