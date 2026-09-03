@@ -455,16 +455,26 @@ function displayStats(
     totalRow.classList.add("stats-total");
 
 
-    // ========================================
-    // Total label
-    // ========================================
+// ========================================
+// Total ID
+// ========================================
 
-    const totalLabelCell = document.createElement("td");
+const totalIdCell = document.createElement("td");
 
-    totalLabelCell.colSpan = 2;
-    totalLabelCell.textContent = "Total";
+totalIdCell.textContent = "Total";
 
-    totalRow.appendChild(totalLabelCell);
+totalRow.appendChild(totalIdCell);
+
+
+// ========================================
+// Total Name
+// ========================================
+
+const totalNameCell = document.createElement("td");
+
+totalNameCell.textContent = "";
+
+totalRow.appendChild(totalNameCell);
 
 
     // ========================================
