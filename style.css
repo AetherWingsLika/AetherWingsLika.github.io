@@ -327,12 +327,12 @@ header {
 
 .player-stats th {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   background-color: var(--card-bg);
 }
 
 .player-stats td {
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   background-color: #ffffff;
   color: #111111;
 }
