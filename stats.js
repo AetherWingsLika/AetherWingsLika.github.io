@@ -52,7 +52,7 @@ Promise.all([
 
   const headerRow = document.querySelector(".player-stats thead tr");
 
-  matchIds.forEach((matchId, index) => {
+  matchIds.forEach(matchId => {
 
     const match = matchs[matchId];
 
@@ -60,9 +60,8 @@ Promise.all([
 
     header.colSpan = 3;
 
-    if (index === 0) {
-      header.classList.add("match-start");
-    }
+    // Separator before every match
+    header.classList.add("match-start");
 
     header.textContent = `${match.opp} · ${match.venue} · ${match.score}`;
 
@@ -78,10 +77,12 @@ Promise.all([
 
     const row = document.createElement("tr");
 
+    // ID
     const idCell = document.createElement("td");
     idCell.textContent = playerId;
     row.appendChild(idCell);
 
+    // Name
     const nameCell = document.createElement("td");
     nameCell.textContent = player.name;
     row.appendChild(nameCell);
@@ -93,6 +94,7 @@ Promise.all([
     let GTOT = 0;
     let ATOT = 0;
 
+    // Calculate totals
     matchIds.forEach(matchId => {
 
       const performance = perfs[matchId][playerId];
@@ -115,49 +117,125 @@ Promise.all([
 
     });
 
+    // P
     const pCell = document.createElement("td");
     pCell.textContent = P;
+    pCell.style.backgroundColor = "#D4F4F1";
     row.appendChild(pCell);
 
+    // T
     const tCell = document.createElement("td");
     tCell.textContent = T;
+    tCell.style.backgroundColor = "#E3F2D9";
     row.appendChild(tCell);
 
+    // R
     const rCell = document.createElement("td");
     rCell.textContent = R;
+    rCell.style.backgroundColor = "#FFF2CA";
     row.appendChild(rCell);
 
+    // MIN
     const minCell = document.createElement("td");
     minCell.textContent = MIN;
     row.appendChild(minCell);
 
+    // GTOT
     const gtotCell = document.createElement("td");
-    gtotCell.textContent = GTOT;
+
+    if (GTOT < 0) {
+      gtotCell.textContent = Math.abs(GTOT);
+      gtotCell.style.color = "red";
+    } else {
+      gtotCell.textContent = GTOT;
+    }
+
     row.appendChild(gtotCell);
 
+    // ATOT
     const atotCell = document.createElement("td");
     atotCell.textContent = ATOT;
     row.appendChild(atotCell);
 
-    matchIds.forEach((matchId, index) => {
+    // Match-by-match data
+    matchIds.forEach(matchId => {
 
       const performance = perfs[matchId][playerId];
 
-      const minCell = document.createElement("td");
+      // MIN
+      const minMatchCell = document.createElement("td");
 
-      if (index === 0) {
-        minCell.classList.add("match-start");
+      // Separator before every match
+      minMatchCell.classList.add("match-start");
+
+      if (performance) {
+
+        minMatchCell.textContent = performance[0];
+
+        // Starter
+        if (performance[3]) {
+          minMatchCell.style.backgroundColor = "#E3F2D9";
+        }
+
+        // On bench / substitute
+        else {
+          minMatchCell.style.backgroundColor = "#FFF2CA";
+        }
+
+      } else {
+
+        // Player was not on the bench
+        minMatchCell.textContent = 0;
+
       }
 
-      minCell.textContent = performance ? performance[0] : 0;
-      row.appendChild(minCell);
+      row.appendChild(minMatchCell);
 
+      // Goals
       const gCell = document.createElement("td");
-      gCell.textContent = performance ? performance[1] : 0;
+
+      if (performance) {
+
+        if (performance[1] < 0) {
+          gCell.textContent = Math.abs(performance[1]);
+          gCell.style.color = "red";
+        } else {
+          gCell.textContent = performance[1];
+        }
+
+        if (performance[3]) {
+          gCell.style.backgroundColor = "#E3F2D9";
+        } else {
+          gCell.style.backgroundColor = "#FFF2CA";
+        }
+
+      } else {
+
+        gCell.textContent = 0;
+
+      }
+
       row.appendChild(gCell);
 
+      // Assists
       const aCell = document.createElement("td");
-      aCell.textContent = performance ? performance[2] : 0;
+
+      if (performance) {
+
+        aCell.textContent = performance[2];
+
+        if (performance[3]) {
+          aCell.style.backgroundColor = "#E3F2D9";
+        } else {
+          aCell.style.backgroundColor = "#FFF2CA";
+        }
+
+      } else {
+
+        aCell.textContent = 0;
+
+      }
+
       row.appendChild(aCell);
 
     });
