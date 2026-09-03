@@ -448,3 +448,7 @@ header {
   width: 30px;
   min-width: 30px;
 }
+
+.stats-section h2 {
+  text-align: center;
+}
