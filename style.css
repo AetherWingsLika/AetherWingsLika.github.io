@@ -349,3 +349,8 @@ header {
 .player-stats .match-start {
   border-left: 3px solid #555;
 }
+
+.player-stats td {
+  background-color: #ffffff;
+  color: #111111;
+}
