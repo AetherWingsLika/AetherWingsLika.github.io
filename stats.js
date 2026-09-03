@@ -11,6 +11,37 @@
 //
 // ========================================
 
+// Player order from joueurs.json
+const playerOrder = [
+  "1",
+  "21",
+  "35",
+  "3",
+  "4",
+  "20",
+  "24",
+  "25",
+  "29",
+  "34",
+  "13",
+  "18",
+  "6",
+  "23",
+  "80",
+  "22",
+  "27",
+  "84",
+  "94",
+  "7",
+  "11",
+  "15",
+  "19",
+  "10",
+  "17",
+  "77",
+  "59"
+];
+
 Promise.all([
   fetch("./perfs.json").then(response => response.json()),
   fetch("./matchs.json").then(response => response.json()),
@@ -35,7 +66,7 @@ Promise.all([
 
   const tbody = document.getElementById("standard-stats");
 
-  Object.keys(joueurs).forEach(playerId => {
+  playerOrder.forEach(playerId => {
 
     const player = joueurs[playerId];
 
@@ -121,7 +152,6 @@ Promise.all([
     });
 
     tbody.appendChild(row);
-
 
   });
 
