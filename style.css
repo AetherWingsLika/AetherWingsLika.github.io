@@ -39,7 +39,7 @@ header {
 .hero {
   max-width: 780px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;
+  padding: 3rem 1.5rem 0.4rem;
   text-align: left;
 }
 
