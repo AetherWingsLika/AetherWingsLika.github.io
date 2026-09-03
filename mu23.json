@@ -1,0 +1,112 @@
+{
+    "NAT1": {
+        "opp": "Ol. Cha",
+        "venue": "A",
+        "score": "1-0"
+    },
+    "NAT2": {
+        "opp": "Tubize",
+        "venue": "H",
+        "score": "0-1"
+    },
+    "NAT3": {
+        "opp": "Meux",
+        "venue": "H",
+        "score": "2-0"
+    },
+    "NAT4": {
+        "opp": "Habay",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT5": {
+        "opp": "USG U23",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT6": {
+        "opp": "Mons",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT7": {
+        "opp": "KAA Gent",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT8": {
+        "opp": "Charleroi",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT9": {
+        "opp": "KRC Genk",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT10": {
+        "opp": "KV Kortrijk",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT11": {
+        "opp": "SK Beveren",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT12": {
+        "opp": "Lommel SK",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT13": {
+        "opp": "Club Brugge",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT14": {
+        "opp": "Zulte Waregem",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT15": {
+        "opp": "RSC Anderlecht",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT16": {
+        "opp": "USG",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT17": {
+        "opp": "STVV",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT18": {
+        "opp": "KVC Westerlo",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT19": {
+        "opp": "Cercle",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT20": {
+        "opp": "Club Brugge",
+        "venue": "A",
+        "score": "0-0"
+    },
+    "NAT21": {
+        "opp": "Zulte Waregem",
+        "venue": "H",
+        "score": "0-0"
+    },
+    "NAT22": {
+        "opp": "Charleroi",
+        "venue": "A",
+        "score": "0-0"
+    }
+}

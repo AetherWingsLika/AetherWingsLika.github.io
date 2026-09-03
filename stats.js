@@ -1,5 +1,5 @@
 // ========================================
-// perfs.json structure
+// Stats renderer
 // ========================================
 //
 // perfs[match][player] → [minutes, goals, assists, starter]
@@ -11,7 +11,11 @@
 //
 // ========================================
 
-// Player order from joueurs.json
+
+// ========================================
+// Player order - Standard
+// ========================================
+
 const playerOrder = [
   "1",
   "21",
@@ -43,210 +47,380 @@ const playerOrder = [
   "59"
 ];
 
+
+// ========================================
+// Display value
+// ========================================
+
 function displayValue(value) {
   return value === 0 ? "" : value;
 }
 
-Promise.all([
-  fetch("./perfs.json").then(response => response.json()),
-  fetch("./matchs.json").then(response => response.json()),
-  fetch("./joueurs.json").then(response => response.json())
-]).then(([perfs, matchs, joueurs]) => {
 
-  const matchIds = Object.keys(perfs);
+// ========================================
+// Render stats table
+// ========================================
 
-  const headerRow = document.querySelector(".player-stats thead tr");
+function displayStats(perfsFile, matchsFile, joueursFile, tbodyId, order = null) {
 
-  matchIds.forEach(matchId => {
+  Promise.all([
+    fetch(perfsFile).then(response => response.json()),
+    fetch(matchsFile).then(response => response.json()),
+    fetch(joueursFile).then(response => response.json())
+  ]).then(([perfs, matchs, joueurs]) => {
 
-    const match = matchs[matchId];
+    const matchIds = Object.keys(perfs);
 
-    const header = document.createElement("th");
+    // Find the table containing this tbody
+    const tbody = document.getElementById(tbodyId);
+    const table = tbody.closest("table");
+    const headerRow = table.querySelector("thead tr");
 
-    header.colSpan = 3;
 
-    // Separator before every match
-    header.classList.add("match-start");
+    // ========================================
+    // Match headers
+    // ========================================
 
-    header.textContent = `${match.opp} · ${match.venue} · ${match.score}`;
-
-    headerRow.appendChild(header);
-
-  });
-
-  const tbody = document.getElementById("standard-stats");
-
-  playerOrder.forEach(playerId => {
-
-    const player = joueurs[playerId];
-
-    const row = document.createElement("tr");
-
-    // ID
-    const idCell = document.createElement("td");
-    idCell.textContent = playerId;
-    row.appendChild(idCell);
-
-    // Name
-    const nameCell = document.createElement("td");
-    nameCell.textContent = player.name;
-    row.appendChild(nameCell);
-
-    let P = 0;
-    let T = 0;
-    let R = 0;
-    let MIN = 0;
-    let GTOT = 0;
-    let ATOT = 0;
-
-    // Calculate totals
     matchIds.forEach(matchId => {
 
-      const performance = perfs[matchId][playerId];
+      const match = matchs[matchId];
 
-      if (performance) {
+      const header = document.createElement("th");
 
-        MIN += performance[0];
-        GTOT += performance[1];
-        ATOT += performance[2];
-
-        if (performance[3]) {
-          T++;
-          P++;
-        } else if (performance[0] > 0) {
-          R++;
-          P++;
-        }
-
-      }
-
-    });
-
-    // P
-    const pCell = document.createElement("td");
-    pCell.textContent = displayValue(P);
-    pCell.style.backgroundColor = "#D4F4F1";
-    row.appendChild(pCell);
-
-    // T
-    const tCell = document.createElement("td");
-    tCell.textContent = displayValue(T);
-    tCell.style.backgroundColor = "#E3F2D9";
-    row.appendChild(tCell);
-
-    // R
-    const rCell = document.createElement("td");
-    rCell.textContent = displayValue(R);
-    rCell.style.backgroundColor = "#FFF2CA";
-    row.appendChild(rCell);
-
-    // MIN
-    const minCell = document.createElement("td");
-    minCell.textContent = displayValue(MIN);
-    row.appendChild(minCell);
-
-    // GTOT
-    const gtotCell = document.createElement("td");
-
-    if (GTOT < 0) {
-      gtotCell.textContent = Math.abs(GTOT);
-      gtotCell.style.color = "red";
-    } else {
-      gtotCell.textContent = displayValue(GTOT);
-    }
-
-    row.appendChild(gtotCell);
-
-    // ATOT
-    const atotCell = document.createElement("td");
-    atotCell.textContent = displayValue(ATOT);
-    row.appendChild(atotCell);
-
-    // Match-by-match data
-    matchIds.forEach(matchId => {
-
-      const performance = perfs[matchId][playerId];
-
-      // MIN
-      const minMatchCell = document.createElement("td");
+      header.colSpan = 3;
 
       // Separator before every match
-      minMatchCell.classList.add("match-start");
+      header.classList.add("match-start");
 
-      if (performance) {
+      header.textContent =
+        `${match.opp} · ${match.venue} · ${match.score}`;
 
-        minMatchCell.textContent = displayValue(performance[0]);
+      headerRow.appendChild(header);
+    });
 
-        // Starter
-        if (performance[3]) {
-          minMatchCell.style.backgroundColor = "#E3F2D9";
+
+    // ========================================
+    // Player order
+    // ========================================
+
+    let playersToDisplay;
+
+    if (order) {
+
+      // Standard team - predefined order
+      playersToDisplay = order;
+
+    } else {
+
+      // U23 - numerical order
+      playersToDisplay = Object.keys(joueurs).sort(
+        (a, b) => Number(a) - Number(b)
+      );
+    }
+
+
+    // ========================================
+    // Players
+    // ========================================
+
+    playersToDisplay.forEach(playerId => {
+
+      const player = joueurs[playerId];
+
+      // Ignore IDs that don't exist in the JSON
+      if (!player) return;
+
+      const row = document.createElement("tr");
+
+
+      // ========================================
+      // ID
+      // ========================================
+
+      const idCell = document.createElement("td");
+
+      idCell.textContent = playerId;
+
+      row.appendChild(idCell);
+
+
+      // ========================================
+      // Name
+      // ========================================
+
+      const nameCell = document.createElement("td");
+
+      nameCell.textContent = player.name;
+
+      row.appendChild(nameCell);
+
+
+      // ========================================
+      // Totals
+      // ========================================
+
+      let P = 0;
+      let T = 0;
+      let R = 0;
+      let MIN = 0;
+      let GTOT = 0;
+      let ATOT = 0;
+
+
+      // ========================================
+      // Calculate totals
+      // ========================================
+
+      matchIds.forEach(matchId => {
+
+        const performance = perfs[matchId][playerId];
+
+        if (performance) {
+
+          MIN += performance[0];
+          GTOT += performance[1];
+          ATOT += performance[2];
+
+          // Starter
+          if (performance[3]) {
+
+            T++;
+            P++;
+
+          // Substitute who played
+          } else if (performance[0] > 0) {
+
+            R++;
+            P++;
+          }
         }
+      });
 
-        // On bench / substitute
-        else {
-          minMatchCell.style.backgroundColor = "#FFF2CA";
-        }
 
-      } else {
+      // ========================================
+      // P
+      // ========================================
 
-        // Player was not on the bench
-        minMatchCell.textContent = displayValue(0);
+      const pCell = document.createElement("td");
 
-      }
+      pCell.textContent = displayValue(P);
 
-      row.appendChild(minMatchCell);
+      pCell.style.backgroundColor = "#D4F4F1";
 
+      row.appendChild(pCell);
+
+
+      // ========================================
+      // T
+      // ========================================
+
+      const tCell = document.createElement("td");
+
+      tCell.textContent = displayValue(T);
+
+      tCell.style.backgroundColor = "#E3F2D9";
+
+      row.appendChild(tCell);
+
+
+      // ========================================
+      // R
+      // ========================================
+
+      const rCell = document.createElement("td");
+
+      rCell.textContent = displayValue(R);
+
+      rCell.style.backgroundColor = "#FFF2CA";
+
+      row.appendChild(rCell);
+
+
+      // ========================================
+      // MIN
+      // ========================================
+
+      const minCell = document.createElement("td");
+
+      minCell.textContent = displayValue(MIN);
+
+      row.appendChild(minCell);
+
+
+      // ========================================
       // Goals
-      const gCell = document.createElement("td");
+      // ========================================
 
-      if (performance) {
+      const gtotCell = document.createElement("td");
 
-        if (performance[1] < 0) {
-          gCell.textContent = Math.abs(performance[1]);
-          gCell.style.color = "red";
-        } else {
-          gCell.textContent = displayValue(performance[1]);
-        }
+      if (GTOT < 0) {
 
-        if (performance[3]) {
-          gCell.style.backgroundColor = "#E3F2D9";
-        } else {
-          gCell.style.backgroundColor = "#FFF2CA";
-        }
+        gtotCell.textContent = Math.abs(GTOT);
+
+        gtotCell.style.color = "red";
 
       } else {
 
-        gCell.textContent = displayValue(0);
-
+        gtotCell.textContent = displayValue(GTOT);
       }
 
-      row.appendChild(gCell);
+      row.appendChild(gtotCell);
 
+
+      // ========================================
       // Assists
-      const aCell = document.createElement("td");
+      // ========================================
 
-      if (performance) {
+      const atotCell = document.createElement("td");
 
-        aCell.textContent = displayValue(performance[2]);
+      atotCell.textContent = displayValue(ATOT);
 
-        if (performance[3]) {
-          aCell.style.backgroundColor = "#E3F2D9";
+      row.appendChild(atotCell);
+
+
+      // ========================================
+      // Match-by-match data
+      // ========================================
+
+      matchIds.forEach(matchId => {
+
+        const performance = perfs[matchId][playerId];
+
+
+        // ====================================
+        // MIN
+        // ====================================
+
+        const minMatchCell = document.createElement("td");
+
+        // Separator before every match
+        minMatchCell.classList.add("match-start");
+
+        if (performance) {
+
+          minMatchCell.textContent =
+            displayValue(performance[0]);
+
+          // Starter
+          if (performance[3]) {
+
+            minMatchCell.style.backgroundColor = "#E3F2D9";
+
+          // On bench / substitute
+          } else {
+
+            minMatchCell.style.backgroundColor = "#FFF2CA";
+          }
+
         } else {
-          aCell.style.backgroundColor = "#FFF2CA";
+
+          // Player was not on the bench
+          minMatchCell.textContent = displayValue(0);
         }
 
-      } else {
+        row.appendChild(minMatchCell);
 
-        aCell.textContent = displayValue(0);
 
-      }
+        // ====================================
+        // Goals
+        // ====================================
 
-      row.appendChild(aCell);
+        const gCell = document.createElement("td");
+
+        if (performance) {
+
+          if (performance[1] < 0) {
+
+            gCell.textContent = Math.abs(performance[1]);
+
+            gCell.style.color = "red";
+
+          } else {
+
+            gCell.textContent =
+              displayValue(performance[1]);
+          }
+
+          // Starter
+          if (performance[3]) {
+
+            gCell.style.backgroundColor = "#E3F2D9";
+
+          // Substitute
+          } else {
+
+            gCell.style.backgroundColor = "#FFF2CA";
+          }
+
+        } else {
+
+          gCell.textContent = displayValue(0);
+        }
+
+        row.appendChild(gCell);
+
+
+        // ====================================
+        // Assists
+        // ====================================
+
+        const aCell = document.createElement("td");
+
+        if (performance) {
+
+          aCell.textContent =
+            displayValue(performance[2]);
+
+          // Starter
+          if (performance[3]) {
+
+            aCell.style.backgroundColor = "#E3F2D9";
+
+          // Substitute
+          } else {
+
+            aCell.style.backgroundColor = "#FFF2CA";
+          }
+
+        } else {
+
+          aCell.textContent = displayValue(0);
+        }
+
+        row.appendChild(aCell);
+
+      });
+
+
+      // Add player row
+      tbody.appendChild(row);
 
     });
 
-    tbody.appendChild(row);
-
   });
+}
 
-});
+
+// ========================================
+// STANDARD
+// ========================================
+
+displayStats(
+  "./perfs.json",
+  "./matchs.json",
+  "./joueurs.json",
+  "standard-stats",
+  playerOrder
+);
+
+
+// ========================================
+// U23 - SL16 FC
+// ========================================
+
+displayStats(
+  "./peu23.json",
+  "./mu23.json",
+  "./ju23.json",
+  "u23-stats"
+);

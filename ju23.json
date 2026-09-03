@@ -1,0 +1,82 @@
+{
+    "1": {
+        "name": "Poitoux",
+        "position": "GK"
+    },
+    "16": {
+        "name": "Durka",
+        "position": "GK"
+    },
+    "3": {
+        "name": "Nkulikiyimana",
+        "position": "DC"
+    },
+    "4": {
+        "name": "Sule Lekan",
+        "position": "Def"
+    },
+    "6": {
+        "name": "Diego DSSousa",
+        "position": "DC"
+    },
+    "7": {
+        "name": "Goemaere",
+        "position": "MDC"
+    },
+    "8": {
+        "name": "Sy",
+        "position": "DC"
+    },
+    "10": {
+        "name": "Mazure",
+        "position": "ATT"
+    },
+    "18": {
+        "name": "Creemers",
+        "position": "Mil"
+    },
+    "20": {
+        "name": "Palstermans",
+        "position": "Mil"
+    },
+    "21": {
+        "name": "Mbuyi",
+        "position": "Mil"
+    },
+    "23": {
+        "name": "Kalonji",
+        "position": "Mil"
+    },
+    "24": {
+        "name": "Djuma Kasuku",
+        "position": "Def"
+    },
+    "25": {
+        "name": "N'famory Traoré",
+        "position": "Mil"
+    },
+    "27": {
+        "name": "Kokora",
+        "position": "Def"
+    },
+    "29": {
+        "name": "Boujlifa",
+        "position": "Mil"
+    },
+    "30": {
+        "name": "Kielo-Lezi",
+        "position": "ATT"
+    },
+    "31": {
+        "name": "Makiese",
+        "position": "MC"
+    },
+    "33": {
+        "name": "Spoden",
+        "position": "MC"
+    },
+    "34": {
+        "name": "Hammas",
+        "position": "ATT"
+    }   
+}
