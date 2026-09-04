@@ -1,21 +1,3 @@
-// ========================================
-// Stats renderer
-// ========================================
-//
-// perfs[match][player] → [minutes, goals, assists, starter]
-//
-// perfs[...][...][0] → minutes
-// perfs[...][...][1] → goals
-// perfs[...][...][2] → assists
-// perfs[...][...][3] → starter
-//
-// ========================================
-
-
-// ========================================
-// Player order - Standard
-// ========================================
-
 const playerOrder = [
   "1",
   "21",
@@ -47,19 +29,13 @@ const playerOrder = [
   "59"
 ];
 
-
-// ========================================
 // Display value
-// ========================================
 
 function displayValue(value) {
   return value === 0 ? "" : value;
 }
 
-
-// ========================================
 // Render stats table
-// ========================================
 
 function displayStats(
   perfsFile,
@@ -81,10 +57,7 @@ function displayStats(
     const table = tbody.closest("table");
     const headerRow = table.querySelector("thead tr");
 
-
-    // ========================================
     // Match headers
-    // ========================================
 
     matchIds.forEach(matchId => {
       const match = matchs[matchId];
@@ -101,10 +74,7 @@ function displayStats(
       headerRow.appendChild(header);
     });
 
-
-    // ========================================
     // Player order
-    // ========================================
 
     let playersToDisplay;
 
@@ -118,10 +88,7 @@ function displayStats(
       );
     }
 
-
-    // ========================================
     // Grand totals
-    // ========================================
 
     let totalP = 0;
     let totalT = 0;
@@ -141,10 +108,7 @@ function displayStats(
       };
     });
 
-
-    // ========================================
     // Players
-    // ========================================
 
     playersToDisplay.forEach(playerId => {
 
@@ -155,10 +119,7 @@ function displayStats(
 
       const row = document.createElement("tr");
 
-
-      // ========================================
       // ID
-      // ========================================
 
       const idCell = document.createElement("td");
 
@@ -166,10 +127,7 @@ function displayStats(
 
       row.appendChild(idCell);
 
-
-      // ========================================
       // Name
-      // ========================================
 
       const nameCell = document.createElement("td");
 
@@ -177,10 +135,7 @@ function displayStats(
 
       row.appendChild(nameCell);
 
-
-      // ========================================
       // Totals
-      // ========================================
 
       let P = 0;
       let T = 0;
@@ -189,10 +144,7 @@ function displayStats(
       let GTOT = 0;
       let ATOT = 0;
 
-
-      // ========================================
       // Calculate totals
-      // ========================================
 
       matchIds.forEach(matchId => {
 
@@ -220,10 +172,7 @@ function displayStats(
         }
       });
 
-
-      // ========================================
       // Add to grand totals
-      // ========================================
 
       totalP += P;
       totalT += T;
@@ -236,10 +185,7 @@ function displayStats(
         totalG += GTOT;
       }
 
-
-      // ========================================
       // P
-      // ========================================
 
       const pCell = document.createElement("td");
 
@@ -248,10 +194,7 @@ function displayStats(
 
       row.appendChild(pCell);
 
-
-      // ========================================
       // T
-      // ========================================
 
       const tCell = document.createElement("td");
 
@@ -260,10 +203,7 @@ function displayStats(
 
       row.appendChild(tCell);
 
-
-      // ========================================
       // R
-      // ========================================
 
       const rCell = document.createElement("td");
 
@@ -272,10 +212,7 @@ function displayStats(
 
       row.appendChild(rCell);
 
-
-      // ========================================
       // MIN
-      // ========================================
 
       const minCell = document.createElement("td");
 
@@ -283,10 +220,7 @@ function displayStats(
 
       row.appendChild(minCell);
 
-
-      // ========================================
       // Goals
-      // ========================================
 
       const gtotCell = document.createElement("td");
 
@@ -302,10 +236,7 @@ function displayStats(
 
       row.appendChild(gtotCell);
 
-
-      // ========================================
       // Assists
-      // ========================================
 
       const atotCell = document.createElement("td");
 
@@ -313,19 +244,13 @@ function displayStats(
 
       row.appendChild(atotCell);
 
-
-      // ========================================
       // Match-by-match data
-      // ========================================
 
       matchIds.forEach(matchId => {
 
         const performance = perfs[matchId][playerId];
 
-
-        // ====================================
         // MIN
-        // ====================================
 
         const minMatchCell = document.createElement("td");
 
@@ -360,10 +285,7 @@ function displayStats(
 
         row.appendChild(minMatchCell);
 
-
-        // ====================================
         // Goals
-        // ====================================
 
         const gCell = document.createElement("td");
 
@@ -405,10 +327,7 @@ function displayStats(
 
         row.appendChild(gCell);
 
-
-        // ====================================
         // Assists
-        // ====================================
 
         const aCell = document.createElement("td");
 
@@ -419,7 +338,6 @@ function displayStats(
 
           // Add to match total
           matchTotals[matchId].A += performance[2];
-
 
           // Starter
           if (performance[3]) {
@@ -445,19 +363,13 @@ function displayStats(
       tbody.appendChild(row);
     });
 
-
-    // ========================================
     // TOTAL ROW
-    // ========================================
 
     const totalRow = document.createElement("tr");
 
     totalRow.classList.add("stats-total");
 
-
-// ========================================
 // Total ID
-// ========================================
 
 const totalIdCell = document.createElement("td");
 
@@ -465,10 +377,7 @@ totalIdCell.textContent = "Total";
 
 totalRow.appendChild(totalIdCell);
 
-
-// ========================================
 // Total Name
-// ========================================
 
 const totalNameCell = document.createElement("td");
 
@@ -476,10 +385,7 @@ totalNameCell.textContent = "";
 
 totalRow.appendChild(totalNameCell);
 
-
-    // ========================================
     // Total P
-    // ========================================
 
     const totalPCell = document.createElement("td");
 
@@ -488,10 +394,7 @@ totalRow.appendChild(totalNameCell);
 
     totalRow.appendChild(totalPCell);
 
-
-    // ========================================
     // Total T
-    // ========================================
 
     const totalTCell = document.createElement("td");
 
@@ -500,10 +403,7 @@ totalRow.appendChild(totalNameCell);
 
     totalRow.appendChild(totalTCell);
 
-
-    // ========================================
     // Total R
-    // ========================================
 
     const totalRCell = document.createElement("td");
 
@@ -512,10 +412,7 @@ totalRow.appendChild(totalNameCell);
 
     totalRow.appendChild(totalRCell);
 
-
-    // ========================================
     // Total MIN
-    // ========================================
 
     const totalMINCell = document.createElement("td");
 
@@ -523,10 +420,7 @@ totalRow.appendChild(totalNameCell);
 
     totalRow.appendChild(totalMINCell);
 
-
-    // ========================================
     // Total Goals
-    // ========================================
 
     const totalGCell = document.createElement("td");
 
@@ -542,10 +436,7 @@ totalRow.appendChild(totalNameCell);
 
     totalRow.appendChild(totalGCell);
 
-
-    // ========================================
     // Total Assists
-    // ========================================
 
     const totalACell = document.createElement("td");
 
@@ -553,16 +444,11 @@ totalRow.appendChild(totalNameCell);
 
     totalRow.appendChild(totalACell);
 
-
-    // ========================================
     // Match-by-match totals
-    // ========================================
 
     matchIds.forEach(matchId => {
 
-      // ====================================
       // MIN
-      // ====================================
 
       const totalMinMatchCell = document.createElement("td");
 
@@ -573,10 +459,7 @@ totalRow.appendChild(totalNameCell);
 
       totalRow.appendChild(totalMinMatchCell);
 
-
-      // ====================================
       // Goals
-      // ====================================
 
       const totalGMatchCell = document.createElement("td");
 
@@ -595,10 +478,7 @@ totalRow.appendChild(totalNameCell);
 
       totalRow.appendChild(totalGMatchCell);
 
-
-      // ====================================
       // Assists
-      // ====================================
 
       const totalAMatchCell = document.createElement("td");
 
@@ -608,16 +488,10 @@ totalRow.appendChild(totalNameCell);
       totalRow.appendChild(totalAMatchCell);
     });
 
-
     // Add total row at the bottom
     tbody.appendChild(totalRow);
   });
 }
-
-
-// ========================================
-// STANDARD
-// ========================================
 
 displayStats(
   "./perfs.json",
@@ -626,11 +500,6 @@ displayStats(
   "standard-stats",
   playerOrder
 );
-
-
-// ========================================
-// U23 - SL16 FC
-// ========================================
 
 displayStats(
   "./peu23.json",

@@ -57,8 +57,6 @@ if (searchTerm) {
     );
   }
 
-
-
   // Update active button
   document.querySelectorAll(".filter-btn").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.filter === filter);

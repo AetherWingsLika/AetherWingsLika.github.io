@@ -236,6 +236,7 @@ header {
 	font-size: 1.35rem;
 	margin-bottom: 1rem;
 	color: #e5e5e5;
+	text-align: center;
 }
 .stats-section img {
 	width: 100%;
@@ -243,35 +244,7 @@ header {
 	border: 1px solid #2a2a2a;
 	background: #111;
 }
-/* Long-format cards */
-.edito-card {
-	max-width: 900px;
-	margin: 0 auto 1.5rem;
-	background: var(--card-bg);
-	border: 1px solid #333;
-	border-radius: 12px;
-	padding: 1.5rem;
-	color: var(--text);
-}
-.edito-card:hover {
-	transform: translateY(-3px);
-	background: #222;
-}
-.edito-card h2 {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-.edito-card p {
-	line-height: 1.7;
-	margin-bottom: 1rem;
-}
-.edito-card img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: 1.5rem auto;
-	border-radius: 8px;
-}
+
 /* =========================Player statistics table========================= */
 .stats-table-wrapper {
 	width: 100%;
@@ -304,7 +277,8 @@ header {
 .player-stats th:nth-child(-n + 8) {
 	z-index: 3;
 }
-.player-stats th:first-child,.player-stats td:first-child {
+.player-stats th:first-child,
+.player-stats td:first-child {
 	text-align: left;
 }
 .player-stats tbody tr:hover {
@@ -315,56 +289,64 @@ header {
 	border-left: 3px solid #555;
 }
 /* =========================Sticky player information========================= */
-.player-stats th:nth-child(1),.player-stats td:nth-child(1) {
+.player-stats th:nth-child(1),
+.player-stats td:nth-child(1) {
 	position: sticky;
 	left: 0;
 	z-index: 2;
 	width: 40px;
 	min-width: 40px;
 }
-.player-stats th:nth-child(2),.player-stats td:nth-child(2) {
+.player-stats th:nth-child(2),
+.player-stats td:nth-child(2) {
 	position: sticky;
 	left: 40px;
 	z-index: 2;
 	width: 110px;
 	min-width: 110px;
 }
-.player-stats th:nth-child(3),.player-stats td:nth-child(3) {
+.player-stats th:nth-child(3),
+.player-stats td:nth-child(3) {
 	position: sticky;
 	left: 150px;
 	z-index: 2;
 	width: 40px;
 	min-width: 40px;
 }
-.player-stats th:nth-child(4),.player-stats td:nth-child(4) {
+.player-stats th:nth-child(4),
+.player-stats td:nth-child(4) {
 	position: sticky;
 	left: 190px;
 	z-index: 2;
 	width: 40px;
 	min-width: 40px;
 }
-.player-stats th:nth-child(5),.player-stats td:nth-child(5) {
+.player-stats th:nth-child(5),
+.player-stats td:nth-child(5) {
 	position: sticky;
 	left: 230px;
 	z-index: 2;
 	width: 40px;
 	min-width: 40px;
 }
-.player-stats th:nth-child(6),.player-stats td:nth-child(6) {
+.player-stats th:nth-child(6),
+.player-stats td:nth-child(6) {
 	position: sticky;
 	left: 270px;
 	z-index: 2;
 	width: 50px;
 	min-width: 50px;
 }
-.player-stats th:nth-child(7),.player-stats td:nth-child(7) {
+.player-stats th:nth-child(7),
+.player-stats td:nth-child(7) {
 	position: sticky;
 	left: 320px;
 	z-index: 2;
 	width: 40px;
 	min-width: 40px;
 }
-.player-stats th:nth-child(8),.player-stats td:nth-child(8) {
+.player-stats th:nth-child(8),
+.player-stats td:nth-child(8) {
 	position: sticky;
 	left: 360px;
 	z-index: 2;
@@ -372,25 +354,18 @@ header {
 	min-width: 40px;
 }
 /* Match columns */
-.player-stats th:nth-child(3n + 9),.player-stats td:nth-child(3n + 9) {
+.player-stats th:nth-child(3n + 9),
+.player-stats td:nth-child(3n + 9) {
 	width: 40px;
 	min-width: 40px;
 }
-.player-stats th:nth-child(3n + 10),.player-stats td:nth-child(3n + 10),.player-stats th:nth-child(3n + 11),.player-stats td:nth-child(3n + 11) {
+.player-stats th:nth-child(3n + 10),
+.player-stats td:nth-child(3n + 10),.player-stats th:nth-child(3n + 11),.player-stats td:nth-child(3n + 11) {
 	width: 30px;
 	min-width: 30px;
 }
-.stats-section h2 {
-	text-align: center;
-}
-.player-stats tbody tr:hover {
-	background: #222;
-}
+
 /* Total row separator */
 .player-stats .stats-total td {
 	border-top: 1px solid #555;
-}
-/* Match separator */
-.player-stats .match-start {
-	border-left: 3px solid #555;
 }
