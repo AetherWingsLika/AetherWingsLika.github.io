@@ -1,5 +1,26 @@
 [
 {
+  "title": "Jupiler Pro League · 30 : Standard Liège 0-0 RAFC ",
+  "excerpt": "...\nJoueur suivi : Touzghar · Milieu · mins · Standard\n",
+  "category": "jupiler",
+  "rating": 3,
+  "color": "#ED1C24"
+},
+{
+  "title": "Serie A · 7 : Inter 3-2 Napoli",
+  "excerpt": "Buteurs : Lautaro (2) - Thuram / Politano - Hojlund\nJoueur suivi : Pio Esposito · Attaquant · 45 mins · Inter\nTrop de duels perdus, doit imposer son physique plus souvent, traitement spécial sur lui non sanctioné",
+  "category": "seriea",
+  "rating": 3,
+  "color": "#010E80"
+},
+{
+  "title": "Jupiler Pro League · 29  : Sporting Charleroi 2-3 USG ",
+  "excerpt": "Buteurs : Mbemba - Pflucke / Koné (csc) - Zorgane - Van de Perre\nJoueur suivi : Besfort Zeneli · Milieu · 80 mins · USG\nD'abords facilement touché entre les lignes, il a été un peu mis sous l'étégnoir avant de revenir dans la lumière. A l'assist sur un corner malin. 5 chances créées (+ du match)",
+  "category": "jupiler",
+  "rating": 4,
+  "color": "#0A0A0A"
+},
+{
   "title": "Jupiler Pro League · 28 : Lommel SK 0-1 Club Brugge",
   "excerpt": "Buteur : Eyoma (csc)\nJoueur suivi : Han-Boeem Lee · DC · mins · Club Brugge\nEn difficulté après une jaune rapide. Trop de duels perdus, forcé à défendre en reculant contre Konadu",
   "category": "jupiler",
