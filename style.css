@@ -274,7 +274,7 @@ header {
 	background-color: #ffffff;
 	color: #111111;
 }
-.player-stats th:nth-child(-n + 8) {
+.player-stats th:nth-child(-n + 5) {
 	z-index: 3;
 }
 .player-stats th:first-child,
@@ -325,30 +325,6 @@ header {
 .player-stats td:nth-child(5) {
 	position: sticky;
 	left: 230px;
-	z-index: 2;
-	width: 40px;
-	min-width: 40px;
-}
-.player-stats th:nth-child(6),
-.player-stats td:nth-child(6) {
-	position: sticky;
-	left: 270px;
-	z-index: 2;
-	width: 50px;
-	min-width: 50px;
-}
-.player-stats th:nth-child(7),
-.player-stats td:nth-child(7) {
-	position: sticky;
-	left: 320px;
-	z-index: 2;
-	width: 40px;
-	min-width: 40px;
-}
-.player-stats th:nth-child(8),
-.player-stats td:nth-child(8) {
-	position: sticky;
-	left: 360px;
 	z-index: 2;
 	width: 40px;
 	min-width: 40px;
