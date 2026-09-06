@@ -7,7 +7,7 @@
   "color": "#000000"
 },
 {
-  "title": "Jupiler Pro League · 32 : - ",
+  "title": "Jupiler Pro League · 34 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "jupiler",
   "rating": 3,
@@ -95,13 +95,14 @@ Jupiler Pro League :
     - Sylla         (USG)
     - Zeleni
     - Zalán Átrok   (Zulte-Waregem)
-    
+
 
 {
-  "title": "Jupiler Pro League · 31 : Cercle 0-1 KAA Gent",
-  "excerpt": "Buteur : Kakou (csc)\nJoueur suivi : Josué Vergara · Attaquant · 90 mins· KAA Gent
-  \n1er duel aérien gagné",
+  "title": "Jupiler Pro League · 33 : RSC Anderlecht - KRC Genk",
+  "excerpt": "Buteurs : \nJoueur suivi : Rafiu Durosinmi · Attaquant · 90 mins· KRC Genk
+  \n",
   "category": "jupiler",
   "rating": 3,
-  "color": "#5FB22C"
+  "color": "#4B0082"
 },
+
