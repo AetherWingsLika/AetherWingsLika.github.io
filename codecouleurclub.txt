@@ -97,12 +97,3 @@ Jupiler Pro League :
     - Zalán Átrok   (Zulte-Waregem)
 
 
-{
-  "title": "Jupiler Pro League · 33 : RSC Anderlecht - KRC Genk",
-  "excerpt": "Buteurs : \nJoueur suivi : Rafiu Durosinmi · Attaquant · 90 mins· KRC Genk
-  \n",
-  "category": "jupiler",
-  "rating": 3,
-  "color": "#4B0082"
-},
-
