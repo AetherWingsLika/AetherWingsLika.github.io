@@ -14,7 +14,7 @@
   "color": "#000000"
 },
 {
-  "title": "Autres · 8 : - | ",
+  "title": "Autres · 9 : - | ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "autres",
   "rating": 3,
