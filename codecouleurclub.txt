@@ -7,7 +7,7 @@
   "color": "#000000"
 },
 {
-  "title": "Jupiler Pro League · 34 : - ",
+  "title": "Jupiler Pro League · 35 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "jupiler",
   "rating": 3,
