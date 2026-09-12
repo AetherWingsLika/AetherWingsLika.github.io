@@ -97,17 +97,3 @@ Jupiler Pro League :
     - Zalán Átrok   (Zulte-Waregem)
 
 
-{
-  "title": "Jupiler Pro League · 36 : - ",
-  "excerpt": "...\nJoueur suivi : Touzghar · Milieu · 90 mins · Standard Liège\n",
-  "category": "jupiler",
-  "rating": 3,
-  "color": "#ED1C24"
-},
-{
-  "title": "Jupiler Pro League · 35 : Sk Beveren 2-0 STVV",
-  "excerpt": "Buteurs : Lokesa - Margaritha\nJoueur suivi : Ferre Slegers · Milieu · 0 min · SK Beveren\n",
-  "category": "jupiler",
-  "rating": 3,
-  "color": "#283B7B"
-},
