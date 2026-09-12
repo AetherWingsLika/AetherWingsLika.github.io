@@ -7,7 +7,7 @@
   "color": "#000000"
 },
 {
-  "title": "Jupiler Pro League · 37 : - ",
+  "title": "Jupiler Pro League · 38 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "jupiler",
   "rating": 3,
@@ -97,3 +97,10 @@ Jupiler Pro League :
     - Zalán Átrok   (Zulte-Waregem)
 
 
+{
+  "title": "Jupiler Pro League · 37 : USG - Lommel ",
+  "excerpt": "...\nJoueur suivi : Zeneli · Milieu · 90 mins · USG\n",
+  "category": "jupiler",
+  "rating": 3,
+  "color": "#FDDB10"
+},
