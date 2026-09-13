@@ -7,7 +7,7 @@
   "color": "#000000"
 },
 {
-  "title": "Jupiler Pro League · 39 : - ",
+  "title": "Jupiler Pro League · 40 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "jupiler",
   "rating": 3,
@@ -97,10 +97,3 @@ Jupiler Pro League :
     - Zalán Átrok   (Zulte-Waregem)
 
 
-{
-  "title": "Jupiler Pro League · 38 : Club Brugge 1-1 Antwerp ",
-  "excerpt": "...\nJoueur suivi : ···\n",
-  "category": "jupiler",
-  "rating": 3,
-  "color": "#000000"
-},
