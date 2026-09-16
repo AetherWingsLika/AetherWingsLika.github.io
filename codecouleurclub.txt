@@ -1,6 +1,6 @@
 ========== POST TEMPLATE ==========
 {
-  "title": "Serie A · 8 : - ",
+  "title": "Serie A · 9 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "seriea",
   "rating": 3,
