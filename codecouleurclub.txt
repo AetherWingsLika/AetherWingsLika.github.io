@@ -1,13 +1,13 @@
 ========== POST TEMPLATE ==========
 {
-  "title": "Serie A · 9 : - ",
+  "title": "Serie A · 10 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "seriea",
   "rating": 3,
   "color": "#000000"
 },
 {
-  "title": "Jupiler Pro League · 40 : - ",
+  "title": "Jupiler Pro League · 43 : - ",
   "excerpt": "...\nJoueur suivi : ···\n",
   "category": "jupiler",
   "rating": 3,
